@@ -1,0 +1,119 @@
+html ::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 0;
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 0;
+}
+html ::-webkit-scrollbar {
+  border-radius: 0;
+  height: 0;
+  width: 0;
+}
+.custom-scroll-400 {
+  max-height: calc(100vh - 400px);
+  overflow-y: overlay;
+}
+.block-header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--black);
+  & .left {
+    & .badge {
+      width: 10px;
+      height: 10px;
+      background-color: var(--red--e84);
+      border-radius: 50%;
+      position: absolute;
+      right: 3px;
+      top: 2px;
+    }
+  }
+  & .heading {
+    & .logo {
+      height: 35px;
+    }
+  }
+}
+.block-main {
+  margin-top: 45px;
+
+  & .form-search {
+    background-color: var(--gray--0c1);
+
+    & .input {
+      background: transparent;
+      padding: 14px 46px 14px 26px;
+
+      &::placeholder {
+        font-size: 15px;
+        color: var(--white);
+      }
+    }
+
+    & .btn-search {
+      right: 0;
+      background-color: transparent;
+      padding: 0 15px;
+      height: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  & .destination-list {
+    margin-top: 28px;
+
+    & .destination-item {
+      margin-bottom: 20px;
+    }
+    & .des {
+      margin-top: 5px;
+    }
+  }
+
+  & .see-more {
+    margin-top: -10px;
+  }
+}
+
+.block-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--gray--161);
+  padding: 7px 26px;
+  height: 64px;
+  z-index: 999;
+
+  & .item {
+    &.active {
+      color: var(--white);
+      & .fill {
+        fill: var(--white);
+      }
+      & .strock {
+        stroke: var(--white);
+      }
+    }
+
+    color: var(--gray--77d);
+    & .fill {
+      fill: var(--gray--77d);
+    }
+    & .strock {
+      stroke: var(--gray--77d);
+    }
+  }
+}
+.icon-white {
+  &::before {
+    color: var(--white);
+  }
+}

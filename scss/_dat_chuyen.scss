@@ -1,0 +1,60 @@
+.block-header {
+  & .heading__text {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      width: 39px;
+      height: 2px;
+      transform: translateX(-50%);
+      background-color: var(--white);
+    }
+  }
+}
+.select-list {
+  & select {
+    appearance: none;
+    background: transparent;
+    font-size: inherit;
+    color: inherit;
+    max-width: 100%;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    & option {
+      color: inherit;
+      background: inherit;
+      font-size: inherit;
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+  }
+  & .select-item {
+    margin-bottom: 20px;
+  }
+
+  & textarea {
+    margin-top: 12px;
+    padding: 9px 11px;
+    color: inherit;
+    background: var(--gray--0c1);
+    font-size: inherit;
+    width: 100%;
+
+    &::placeholder {
+      color: inherit;
+      font-size: inherit;
+    }
+  }
+}

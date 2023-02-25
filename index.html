@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon//apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon//apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon//apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon//apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon//apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon//apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon//apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon//apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon//manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- end favicon -->
+  <title>A2b</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <section class="block-header text-white px-15 py-12 d-flex align-items-center justify-content-between">
+      <!-- left -->
+      <div class="left">
+        <a href="#">
+          <div class="notification position-relative">
+            <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="fill-white" d="M25.2515 22.2063V12.3122C25.2515 7.15961 21.5227 2.88694 16.6207 2.01739V1.23099C16.6207 0.550828 16.0687 0 15.3897 0H14.1587C13.4785 0 12.9277 0.550828 12.9277 1.23099V2.02086C8.03493 2.89964 4.32117 7.16885 4.32117 12.3122V22.2063L0 25.7042V27.7008H29.5507V25.7042L25.2538 22.2063H25.2515ZM28.3174 26.4686H1.22984V26.2908L5.55101 22.793V12.3111C5.55101 7.2185 9.69319 3.07632 14.7858 3.07632C19.8772 3.07632 24.0205 7.2185 24.0205 12.3111V22.7907L28.3174 26.2885V26.4686Z" fill="white"/>
+              <path d="M14.772 32C16.473 32 17.8541 30.6235 17.8541 28.9214H11.6934C11.6945 30.6224 13.0733 32 14.7731 32H14.772Z" fill="white"/>
+              </svg>
+            <span class="badge text-red-84"></span>
+          </div>
+        </a>
+      </div>
+      <!-- end left -->
+      <!-- center -->
+      <div class="center">
+        <a href="#">
+          <h1 class="heading">
+            <img src="./images/svg/logo.svg" alt="" class="logo">
+          </h1>
+        </a>
+      </div>
+      <!-- end center -->
+      <!-- right -->
+      <div class="right">
+        <a href="#">
+          <div class="user">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="fill-white" d="M15.1568 0.0353031C11.6656 0.342239 8.65947 2.67236 7.58001 5.90434C7.27603 6.80001 7.15976 7.53307 7.15976 8.5476C7.15976 11.6545 8.76934 14.3605 11.5881 15.9703C11.9177 16.158 12.1442 16.321 12.0923 16.3399C12.0407 16.3588 11.7239 16.4464 11.3876 16.5404C11.0513 16.6344 10.4632 16.8284 10.0753 16.9789C4.27626 19.2398 0.319701 24.5453 0.0160504 30.5021C-0.00989974 30.9844 -0.0034965 31.4729 0.0288569 31.5859C0.138724 32.0182 0.733555 32.1433 1.04395 31.8115C1.20538 31.63 1.21852 31.5735 1.26368 30.8094C1.55452 25.4599 4.67056 20.8558 9.54515 18.5698C11.517 17.6424 13.2884 17.2228 15.4928 17.1477C17.9496 17.0664 20.2447 17.536 22.4168 18.5632C27.2849 20.8744 30.4461 25.5222 30.6982 30.7464C30.737 31.5794 30.7434 31.6296 30.9116 31.8112C31.1185 32.0303 31.4353 32.0616 31.7133 31.8863C31.9846 31.7172 32.0301 31.5229 31.9846 30.6585C31.7777 26.8692 30.2392 23.3988 27.5626 20.6929C25.4876 18.5884 22.9273 17.1226 20.0634 16.3775L19.7789 16.3086L20.4189 15.9389C22.7012 14.6237 24.1814 12.5753 24.6727 10.0509C24.8345 9.24931 24.8345 7.84622 24.6727 7.04426C24.0651 3.91252 21.7636 1.36917 18.6732 0.41081C17.5681 0.0666485 16.2945 -0.0711479 15.1568 0.0353031ZM16.9861 1.28787C18.1434 1.4446 19.5592 2.00199 20.4705 2.66583C23.231 4.67659 24.2525 8.17797 22.9917 11.2784C22.3194 12.9257 20.8972 14.3915 19.2421 15.1556C18.6668 15.4188 17.9813 15.6379 17.3673 15.757C16.7788 15.8697 15.1757 15.8697 14.5872 15.757C13.1003 15.4687 11.7684 14.7925 10.7082 13.7838C9.64794 12.769 9.0339 11.7293 8.62004 10.2449C8.47142 9.70613 8.45827 9.52458 8.45827 8.54728C8.45827 7.5703 8.47108 7.38842 8.62004 6.84997C9.02075 5.40933 9.63513 4.34451 10.6371 3.37374C12.312 1.75775 14.6846 0.97473 16.9861 1.28787Z" fill="white"/>
+              </svg>
+          </div>
+        </a>
+      </div>
+      <!-- end right -->
+    </section>
+    <!-- end header -->
+
+    <!-- main -->
+    <main class="block-main block-home px-15">
+      <h2 class="heading text-white">Xin chào Thế Thành</h2>
+      <h3 class="title text-white fw-300 fs-27 lh-40 mt-24 mb-10">Bạn cần đi đâu?</h3>
+      <div class="form-search position-relative">
+        <input type="text" placeholder="Tìm kiếm..." class="input w-100">
+        <button class="btn btn-search position-absolute">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="strock-white" d="M8.6 16.1999C12.7974 16.1999 16.2 12.7973 16.2 8.59994C16.2 4.40257 12.7974 0.999939 8.6 0.999939C4.40263 0.999939 1 4.40257 1 8.59994C1 12.7973 4.40263 16.1999 8.6 16.1999Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="strock-white" d="M16.9999 17L15.3999 15.4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></button>
+      </div>
+      <ul class="destination-list custom-scroll-400">
+        <li class="destination-item d-flex">
+          <div class="icon mr-10">
+            <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M8.68311 20.4804C8.64853 20.5219 8.61031 20.56 8.5688 20.5945C8.19147 20.908 7.63102 20.8569 7.31689 20.4804C2.43897 14.6337 0 10.3613 0 7.66295C0 3.43078 3.75938 -6.10352e-05 8 -6.10352e-05C12.2406 -6.10352e-05 16 3.43078 16 7.66295C16 10.3613 13.5611 14.6337 8.68311 20.4804ZM14.2222 7.66295C14.2222 4.49157 11.3418 1.77417 8 1.77417C4.6582 1.77417 1.77778 4.49157 1.77778 7.66295C1.77778 9.69542 3.83868 13.4084 8 18.5167C12.1613 13.4084 14.2222 9.69542 14.2222 7.66295ZM8 9.75822C7.01813 9.75822 6.22222 8.9639 6.22222 7.98399C6.22222 7.00411 7.01813 6.20976 8 6.20976C8.98187 6.20976 9.77778 7.00411 9.77778 7.98399C9.77778 8.9639 8.98187 9.75822 8 9.75822Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="content">
+            <h3 class="title fw-700 lh-19">Nhà riêng</h3>
+            <p class="des fs-15 text-gray-77d">286 Nguyễn Xiển, Thanh Trì, Hà Nội</p>
+          </div>
+        </li>
+        <li class="destination-item d-flex">
+          <div class="icon mr-10">
+            <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M8.68311 20.4804C8.64853 20.5219 8.61031 20.56 8.5688 20.5945C8.19147 20.908 7.63102 20.8569 7.31689 20.4804C2.43897 14.6337 0 10.3613 0 7.66295C0 3.43078 3.75938 -6.10352e-05 8 -6.10352e-05C12.2406 -6.10352e-05 16 3.43078 16 7.66295C16 10.3613 13.5611 14.6337 8.68311 20.4804ZM14.2222 7.66295C14.2222 4.49157 11.3418 1.77417 8 1.77417C4.6582 1.77417 1.77778 4.49157 1.77778 7.66295C1.77778 9.69542 3.83868 13.4084 8 18.5167C12.1613 13.4084 14.2222 9.69542 14.2222 7.66295ZM8 9.75822C7.01813 9.75822 6.22222 8.9639 6.22222 7.98399C6.22222 7.00411 7.01813 6.20976 8 6.20976C8.98187 6.20976 9.77778 7.00411 9.77778 7.98399C9.77778 8.9639 8.98187 9.75822 8 9.75822Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="content">
+            <h3 class="title fw-700 lh-19">Khu đo thị Royal City</h3>
+            <p class="des fs-15 text-gray-77d">72 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+          </div>
+        </li>
+        <li class="destination-item d-flex">
+          <div class="icon mr-10">
+            <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M8.68311 20.4804C8.64853 20.5219 8.61031 20.56 8.5688 20.5945C8.19147 20.908 7.63102 20.8569 7.31689 20.4804C2.43897 14.6337 0 10.3613 0 7.66295C0 3.43078 3.75938 -6.10352e-05 8 -6.10352e-05C12.2406 -6.10352e-05 16 3.43078 16 7.66295C16 10.3613 13.5611 14.6337 8.68311 20.4804ZM14.2222 7.66295C14.2222 4.49157 11.3418 1.77417 8 1.77417C4.6582 1.77417 1.77778 4.49157 1.77778 7.66295C1.77778 9.69542 3.83868 13.4084 8 18.5167C12.1613 13.4084 14.2222 9.69542 14.2222 7.66295ZM8 9.75822C7.01813 9.75822 6.22222 8.9639 6.22222 7.98399C6.22222 7.00411 7.01813 6.20976 8 6.20976C8.98187 6.20976 9.77778 7.00411 9.77778 7.98399C9.77778 8.9639 8.98187 9.75822 8 9.75822Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="content">
+            <h3 class="title fw-700 lh-19">Cảng hàng không quốc tế Nội Bài</h3>
+            <p class="des fs-15 text-gray-77d">Phú Minh, Sóc Sơn, Hà Nội</p>
+          </div>
+        </li>
+      </ul>
+      <button class="btn see-more d-flex mx-auto fs-16">
+        <svg class="mr-10" width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.7962 0L19 1.0835L9.5 11L0 1.0835L1.20379 0L9.5 8.65975L17.7962 0Z" fill="white"/>
+        </svg>
+         Xem thêm</button>
+    </main>
+    <!-- end main -->
+
+    <!-- footer -->
+    <section class="block-footer px-15 py-12 d-flex align-items-center justify-content-between">
+      <!-- left -->
+      <div class="left">
+        <a href="#">
+          <div class="item text-center active">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill" d="M12 0L0 9.998V24H7.998V16H16V24H23.998V9.998L12 0Z" fill="white"/>
+            </svg>
+            <p class="text fs-13 lh-20 fw-300">Trang chủ</p>
+          </div>
+        </a>
+      </div>
+      <!-- end left -->
+      <!-- center -->
+      <div class="center">
+        <a href="#">
+          <div class="item text-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="fill" d="M12 0C5.36623 0 0 5.36623 0 12C0 18.6338 5.36623 24 12 24C18.6338 24 24 18.6338 24 12C24 5.36623 18.6338 0 12 0ZM12 1.55844C17.761 1.55844 22.4416 6.23896 22.4416 12C22.4416 17.761 17.761 22.4416 12 22.4416C6.23896 22.4416 1.55844 17.761 1.55844 12C1.55844 6.23896 6.23896 1.55844 12 1.55844ZM2.88416 9.29351C2.63948 10.2909 2.49351 11.2156 2.49351 12.0987C10.0104 13.6727 8.80519 15.3403 10.1818 21.3351C10.774 21.4442 11.3766 21.5065 12 21.5065C12.6234 21.5065 13.226 21.4442 13.8182 21.3351C15.1948 15.3403 13.9896 13.6727 21.5065 12.0987C21.4753 11.1169 21.3506 10.1039 21.1169 9.29351C16.7117 8.19221 14.3429 7.63636 12 7.63636C9.65714 7.63636 7.28831 8.19221 2.88416 9.29351ZM12 8.20779C14.0883 8.20779 15.7922 9.91169 15.7922 12C15.7922 14.0883 14.0883 15.7922 12 15.7922C9.91169 15.7922 8.20779 14.0883 8.20779 12C8.20779 9.91169 9.91169 8.20779 12 8.20779ZM12 9.14286C10.4156 9.14286 9.14286 10.4156 9.14286 12C9.14286 13.5844 10.4156 14.8571 12 14.8571C13.5844 14.8571 14.8571 13.5844 14.8571 12C14.8571 10.4156 13.5844 9.14286 12 9.14286Z" fill="#777D92"/>
+              </svg>
+            <p class="text fs-13 lh-20 fw-300">Lái xe</p>
+          </div>
+        </a>
+      </div>
+      <!-- end center -->
+      <!-- right -->
+      <div class="right">
+        <a href="#">
+          <div class="item text-center">
+            <svg width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="strock" d="M1 10.7493C1 4.91672 2.25009 3.66663 8.08267 3.66663H17.9173C23.7499 3.66663 25 4.91672 25 10.7493V17.9173C25 23.7498 23.7499 25 17.9173 25H8.08267C2.25009 25 1 23.7498 1 17.9173V10.7493Z" stroke="#777D92" stroke-width="1.5"/>
+              <path class="strock" d="M5 3.66667V1" stroke="#777D92" stroke-width="1.5" stroke-linecap="round"/>
+              <path class="strock" d="M21 3.66667V1" stroke="#777D92" stroke-width="1.5" stroke-linecap="round"/>
+              <path class="strock" d="M6.33325 9H19.6666" stroke="#777D92" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <p class="text fs-13 lh-20 fw-300">Nhật ký</p>
+          </div>
+        </a>
+      </div>
+      <!-- end right -->
+    </section>
+    <!-- end footer -->
+  
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
