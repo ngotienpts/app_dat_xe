@@ -42,6 +42,7 @@ html ::-webkit-scrollbar {
 }
 .block-main {
   margin-top: 45px;
+  // margin-bottom: 120px;
 
   & .form-search {
     background-color: var(--gray--0c1);
@@ -111,6 +112,17 @@ html ::-webkit-scrollbar {
       stroke: var(--gray--77d);
     }
   }
+}
+
+.block-footer--secondary {
+  height: 3rem;
+  padding: 0;
+}
+
+.block-footer--third {
+  background-color: var(--black);
+  // height: 2.5rem;
+  padding: 0 15px 20px 15px;
 }
 .icon-white {
   &::before {

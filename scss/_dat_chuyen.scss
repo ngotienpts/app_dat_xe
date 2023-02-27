@@ -43,18 +43,16 @@
   & .select-item {
     margin-bottom: 20px;
   }
+}
+textarea {
+  padding: 9px 11px;
+  color: inherit;
+  background: var(--gray--0c1);
+  font-size: inherit;
+  width: 100%;
 
-  & textarea {
-    margin-top: 12px;
-    padding: 9px 11px;
+  &::placeholder {
     color: inherit;
-    background: var(--gray--0c1);
     font-size: inherit;
-    width: 100%;
-
-    &::placeholder {
-      color: inherit;
-      font-size: inherit;
-    }
   }
 }

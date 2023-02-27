@@ -1,0 +1,12 @@
+.notification-list {
+  & .notification-item {
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+    }
+  }
+}

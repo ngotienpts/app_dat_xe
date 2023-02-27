@@ -1,0 +1,18 @@
+.avatar img {
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.avatar-user-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.evaluate-box {
+  & .list {
+    margin-bottom: 130px;
+  }
+}

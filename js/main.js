@@ -1,8 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var starRating = document.querySelector(".star-cb-group");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
       const _this = this;
+      if (starRating) {
+        var stars = starRating.querySelectorAll('[type*="radio"]');
+        stars.forEach((star) => {
+          star.onchange = () => {
+            if (star.checked) {
+              console.log(star.value);
+            }
+          };
+        });
+      }
     },
     // scroll top
     scrollFunc: function () {},
