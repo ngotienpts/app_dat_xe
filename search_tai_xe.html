@@ -71,7 +71,7 @@
     <!-- end header -->
 
     <!-- main -->
-    <main class="block-main block-home px-15">
+    <main class="block-main block-home px-15 custom-scroll-100">
         <h2 class="title text-white fw-300 fs-27 lh-40">Bạn đang đặt chuyến</h2>
         <ul class="destination-list">
             <li class="destination-item d-flex">
@@ -97,121 +97,205 @@
             </div>
             </li>
         </ul>
-        <a href="#" class="d-flex align-items-center justify-content-center mb-20">
-            <svg class="mr-10" width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="fill-white" d="M17.7962 0L19 1.0835L9.5 11L0 1.0835L1.20379 0L9.5 8.65975L17.7962 0Z" fill="white"/>
-            </svg>
-            Xem chi tiết
-        </a>
-        <div class="line"></div>
-        <div class="custom-scroll-400">
-            <!-- Chọn tài xế -->
-            <div class="choose-driver mt-20">
-                <h2 class="title text-white fw-300 fs-27 lh-40 mb-10">Chọn tài xế</h2>
-                <div class="list">
-                    <!-- item -->
-                    <div class="item d-flex bg-gray-0c1 py-10 px-15 -mx-15 mb-20">
-                        <!-- img -->
-                        <div class="artilce-img flex-0 w-35">
-                            <a href="#" class="image-wrapper">
-                                <img src="./images/3.jpg" alt="">
-                            </a>
-                        </div>
-                        <!-- end img -->
-                        <!-- content -->
-                        <div class="article-content flex-1 ml-15">
-                            <h3 class="title lh-24 fw-700 d-flex align-items-center">
-                                Nguyễn Văn Toàn 
-                                <svg  class="ml-10" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="fill-white" d="M14.7002 3.55158L14.6789 3.05047L14.18 2.99923C12.2635 2.8024 10.6159 2.08722 9.57116 1.52191C8.42692 0.902748 7.73332 0.321868 7.72696 0.316507L7.35238 0L6.97755 0.31605C6.97066 0.32185 6.27706 0.902748 5.13284 1.52189C4.08812 2.0872 2.44054 2.80239 0.524025 2.99921L0.0250705 3.05045L0.00376736 3.55157C-4.68266e-05 3.64128 -0.0801974 5.77852 0.743033 8.36652C1.22881 9.89372 1.93033 11.2621 2.82812 12.4337C3.95549 13.9049 5.39343 15.0646 7.10203 15.8806L7.35199 16L7.60195 15.8806C9.31055 15.0646 10.7485 13.905 11.8759 12.4337C12.7737 11.2621 13.4752 9.89371 13.961 8.36654C14.7842 5.77856 14.704 3.64131 14.7002 3.55158ZM7.35199 14.7106C5.92659 13.9863 4.72019 12.9901 3.7629 11.7463C2.94745 10.6869 2.30732 9.44381 1.86024 8.05167C1.31381 6.35009 1.19126 4.83257 1.16646 4.08741C1.93518 3.97327 2.71233 3.78121 3.48367 3.51446C4.23772 3.25369 4.98822 2.92121 5.7143 2.52627C6.45104 2.12555 7.01165 1.74282 7.35197 1.49254C7.6923 1.7428 8.25293 2.12555 8.98966 2.52627C9.71575 2.92122 10.4662 3.25369 11.2203 3.51446C11.9918 3.7813 12.7692 3.97336 13.5382 4.0875C13.5143 4.82534 13.3941 6.32149 12.8554 8.01493C12.4104 9.41395 11.771 10.6633 10.955 11.7282C9.99545 12.9804 8.78431 13.9828 7.35199 14.7106Z" fill="white"/>
-                                <path class="fill-white" d="M10.5134 5.36124L9.70412 6.17055L6.68791 9.18677L5.15926 7.65813L4.9514 7.45027L4.54126 7.8604V7.86042L4.1311 8.27058L6.68791 10.8274L11.3337 6.18155L10.5134 5.36124Z" fill="white"/>
-                                </svg>
-                            </h3>
-                            <p class="name lh-24 mt-4">Volvo S90 - 2021</p>
-                            <div class="bot d-flex algin-items-center mt-4">
-                                <div class="evaluate d-flex align-items-center mr-24">
-                                    <svg class="mr-4" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path class="fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M10.4468 3.78673C10.3871 3.60383 10.2177 3.48066 10.025 3.48066H6.68781L5.65691 0.306679V0.306068C5.59656 0.123164 5.42721 0 5.23445 0C5.04232 0 4.87234 0.123164 4.81261 0.306684L3.7811 3.48066H0.443927C0.251176 3.48066 0.0818169 3.60383 0.0220832 3.78673C-0.0376505 3.96963 0.0263908 4.16916 0.182816 4.28308L2.88322 6.24511L1.85171 9.41971C1.79197 9.60323 1.85787 9.80276 2.01429 9.91545C2.09188 9.97149 2.18303 9.9999 2.27416 9.9999C2.36531 9.9999 2.45646 9.97149 2.53466 9.91483L5.23445 7.95342L7.93363 9.91483C8.08943 10.0281 8.29943 10.0281 8.45524 9.91545C8.61166 9.80276 8.67693 9.60323 8.6172 9.4191L7.58569 6.24511L10.2867 4.28309C10.4425 4.16916 10.5072 3.96963 10.4468 3.78673" fill="white"/>
-                                    </svg>
-                                    5.0
-                                </div>
-                                <div class="price d-flex align-items-center">
-                                    <svg class="mr-4" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path class="strok-white" d="M8.86471 1H0.594238V6.31762H8.86471V1Z" stroke="white" stroke-miterlimit="10"/>
-                                        <path class="strok-white" d="M8.27047 6.31763H1.18237V14H8.27047V6.31763Z" stroke="white" stroke-miterlimit="10"/>
-                                        <path class="strok-white" d="M9.45905 14H0" stroke="white" stroke-miterlimit="10"/>
-                                        <path class="strok-white" d="M6.01713 10.9419C6.01713 11.2834 5.88147 11.6109 5.64 11.8524C5.39852 12.0939 5.07101 12.2295 4.72951 12.2295C4.38802 12.2295 4.0605 12.0939 3.81903 11.8524C3.57755 11.6109 3.44189 11.2834 3.44189 10.9419C3.44189 9.83999 4.72951 8.55237 4.72951 8.55237C4.72951 8.55237 6.01713 9.83999 6.01713 10.9419Z" stroke="white" stroke-miterlimit="10"/>
-                                        <path class="strok-white" d="M2.95898 2.77045V4.54711" stroke="white" stroke-miterlimit="10"/>
-                                        <path class="strok-white" d="M4.72949 2.77045V4.54711" stroke="white" stroke-miterlimit="10"/>
-                                        <path class="strok-white" d="M6.5 2.77045V4.54711" stroke="white" stroke-miterlimit="10"/>
-                                        <path class="strok-white" d="M8.27661 6.3176H10.0471C10.3602 6.31922 10.66 6.44432 10.8814 6.66571C11.1027 6.88709 11.2278 7.18689 11.2295 7.49998V12.2295C11.2295 12.5431 11.354 12.8438 11.5758 13.0656C11.7975 13.2873 12.0983 13.4119 12.4118 13.4119C12.7249 13.4103 13.0247 13.2852 13.2461 13.0638C13.4675 12.8424 13.5926 12.5426 13.5942 12.2295V3.95284L11.2295 1.58807" stroke="white" stroke-miterlimit="10"/>
-                                        <path class="strok-white" d="M12.7585 3.12335C12.6484 3.23151 12.5609 3.36063 12.5014 3.50309C12.4419 3.64555 12.4114 3.79848 12.4119 3.95288C12.4135 4.26596 12.5386 4.56576 12.76 4.78715C12.9814 5.00854 13.2812 5.13363 13.5943 5.13526" stroke="white" stroke-miterlimit="10"/>
-                                    </svg>
-                                    500k
-                                </div>
+        <div class="js_show-select">
+            <div class="see-details d-flex align-items-center justify-content-center mb-20 ">
+                <img src="./images/svg/down.svg" alt="" class="mr-10">
+                Xem chi tiết
+            </div>
+            <div class="hide-select">
+                <div class="form-group-select">
+                    <form action="">
+                      <div class="select-list mt-20">
+                        <!-- item -->
+                        <div class="select-item d-flex position-relative">
+                            <div class="icon mr-10 flex-0">
+                                <img src="./images/svg/car-secondary.svg" alt="">
+                            </div>
+                            <div class="content flex-1">
+                              <h3 class="title fw-700 lh-19">Loại hình xe</h3>
+                              <div class="select-wrapper fs-15 text-gray-77d">
+                                <ul class="default-option js_default-option">
+                                  <li class="mt-4">Xe sedan</li>
+                                </ul>
+                                <ul class="select-option js_select text-white position-absolute -mx-15">
+                                  <li class="option">
+                                    <h4 class="title fs-15 lh-19 fw-700">Xe sedan</h4>
+                                    <p class="sapo mt-12 fs-15 lh-19">Yêu cầu sedan hạng B trở lên, xe sạch sẽ, tài xế lịch sự</p>
+                                  </li>
+                                  <li class="option">
+                                    <h4 class="title fs-15 lh-19 fw-700">Xe SUV</h4>
+                                    <p class="sapo mt-12 fs-15 lh-19">Yêu cầu 7 chỗ rộng rãi</p>
+                                  </li>
+                                  <li class="option">
+                                    <h4 class="title fs-15 lh-19 fw-700">Xe khách</h4>
+                                    <p class="sapo mt-12 fs-15 lh-19">Xe 16 chỗ đi tỉnh</p>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                         </div>
-                        <!-- end content -->
-                    </div>
-                    <!-- end item -->
-                    <!-- item -->
-                    <div class="item d-flex bg-gray-0c1 py-10 px-15 -mx-15 mb-20">
-                        <!-- img -->
-                        <div class="artilce-img flex-0 w-35">
-                            <a href="#" class="image-wrapper">
-                                <img src="./images/3.jpg" alt="">
-                            </a>
-                        </div>
-                        <!-- end img -->
-                        <!-- content -->
-                        <div class="article-content flex-1 ml-15">
-                            <h3 class="title lh-24 fw-700 d-flex align-items-center">
-                                Nguyễn Văn Toàn 
-                                <svg  class="ml-10" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="fill-white" d="M14.7002 3.55158L14.6789 3.05047L14.18 2.99923C12.2635 2.8024 10.6159 2.08722 9.57116 1.52191C8.42692 0.902748 7.73332 0.321868 7.72696 0.316507L7.35238 0L6.97755 0.31605C6.97066 0.32185 6.27706 0.902748 5.13284 1.52189C4.08812 2.0872 2.44054 2.80239 0.524025 2.99921L0.0250705 3.05045L0.00376736 3.55157C-4.68266e-05 3.64128 -0.0801974 5.77852 0.743033 8.36652C1.22881 9.89372 1.93033 11.2621 2.82812 12.4337C3.95549 13.9049 5.39343 15.0646 7.10203 15.8806L7.35199 16L7.60195 15.8806C9.31055 15.0646 10.7485 13.905 11.8759 12.4337C12.7737 11.2621 13.4752 9.89371 13.961 8.36654C14.7842 5.77856 14.704 3.64131 14.7002 3.55158ZM7.35199 14.7106C5.92659 13.9863 4.72019 12.9901 3.7629 11.7463C2.94745 10.6869 2.30732 9.44381 1.86024 8.05167C1.31381 6.35009 1.19126 4.83257 1.16646 4.08741C1.93518 3.97327 2.71233 3.78121 3.48367 3.51446C4.23772 3.25369 4.98822 2.92121 5.7143 2.52627C6.45104 2.12555 7.01165 1.74282 7.35197 1.49254C7.6923 1.7428 8.25293 2.12555 8.98966 2.52627C9.71575 2.92122 10.4662 3.25369 11.2203 3.51446C11.9918 3.7813 12.7692 3.97336 13.5382 4.0875C13.5143 4.82534 13.3941 6.32149 12.8554 8.01493C12.4104 9.41395 11.771 10.6633 10.955 11.7282C9.99545 12.9804 8.78431 13.9828 7.35199 14.7106Z" fill="white"/>
-                                <path class="fill-white" d="M10.5134 5.36124L9.70412 6.17055L6.68791 9.18677L5.15926 7.65813L4.9514 7.45027L4.54126 7.8604V7.86042L4.1311 8.27058L6.68791 10.8274L11.3337 6.18155L10.5134 5.36124Z" fill="white"/>
-                                </svg>
-                            </h3>
-                            <p class="name lh-24 mt-4">Volvo S90 - 2021</p>
-                            <div class="bot d-flex algin-items-center mt-4">
-                                <div class="evaluate d-flex align-items-center mr-24">
-                                    <svg class="mr-4" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path class="fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M10.4468 3.78673C10.3871 3.60383 10.2177 3.48066 10.025 3.48066H6.68781L5.65691 0.306679V0.306068C5.59656 0.123164 5.42721 0 5.23445 0C5.04232 0 4.87234 0.123164 4.81261 0.306684L3.7811 3.48066H0.443927C0.251176 3.48066 0.0818169 3.60383 0.0220832 3.78673C-0.0376505 3.96963 0.0263908 4.16916 0.182816 4.28308L2.88322 6.24511L1.85171 9.41971C1.79197 9.60323 1.85787 9.80276 2.01429 9.91545C2.09188 9.97149 2.18303 9.9999 2.27416 9.9999C2.36531 9.9999 2.45646 9.97149 2.53466 9.91483L5.23445 7.95342L7.93363 9.91483C8.08943 10.0281 8.29943 10.0281 8.45524 9.91545C8.61166 9.80276 8.67693 9.60323 8.6172 9.4191L7.58569 6.24511L10.2867 4.28309C10.4425 4.16916 10.5072 3.96963 10.4468 3.78673" fill="white"/>
-                                    </svg>
-                                    5.0
-                                </div>
-                                <div class="price d-flex align-items-center">
-                                    <svg class="mr-4" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path class="fill-white" d="M18 3V1.33C17.9974 0.978071 17.8564 0.641298 17.6076 0.39244C17.3587 0.143581 17.0219 0.00261668 16.67 5.20267e-10H1.34C0.986336 -9.8477e-06 0.647008 0.139795 0.395995 0.388935C0.144982 0.638075 0.00263929 0.976346 5.20266e-10 1.33V8.66C-9.8477e-06 9.01366 0.139795 9.35299 0.388935 9.60401C0.638075 9.85502 0.976346 9.99736 1.33 10H16.67C17.0219 9.99738 17.3587 9.85642 17.6076 9.60756C17.8564 9.3587 17.9974 9.02193 18 8.67V7H20V3H18ZM9.5 6V8L2 4H7.5V2L15 6H9.5Z" fill="white"/>
-                                    </svg>
-                                    500k
-                                </div>
+                        <!-- item -->
+                        <!-- item -->
+                        <div class="select-item d-flex position-relative">
+                            <div class="icon mr-10 flex-0">
+                              <img src="./images/svg/time.svg" alt="">
+                            </div>
+                            <div class="content flex-1">
+                              <h3 class="title fw-700 lh-19">Thời gian khởi hành</h3>
+                              <div class="select-wrapper fs-15 text-gray-77d">
+                                <ul class="default-option js_default-option">
+                                  <li class="mt-4">30 phút nữa</li>
+                                </ul>
+                                <ul class="select-option select-option--secondary js_select text-white position-absolute -mx-15 text-center">
+                                  <li class="option-secondary mb-20">
+                                    <span class="fs-15">Sau khoảng</span>
+                                    <span class="fs-23">&nbsp;&nbsp;00&nbsp;&nbsp;</span>
+                                    <span class="fs-15">giờ</span>
+                                    <span class="fs-23">&nbsp;&nbsp;30&nbsp;&nbsp;</span>
+                                    <span class="fs-15">phút nữa</span>
+                                  </li>
+                                  <li class="divider fs-11 mb-20">
+                                    <span>hoặc</span>
+                                  </li>
+                                  <li class="option-secondary mb-20">
+                                    <h4><span class="fs-15">Ngày:</span><span class="fs-23"> 20/02/2023</span></h4>
+                                    <h4><span class="fs-15">Giờ:</span> <span class="fs-23">14:00</span></h4>
+                                  </li>
+                                  
+                                </ul>
+                              </div>
                             </div>
                         </div>
-                        <!-- end content -->
-                    </div>
-                    <!-- end item -->
+                        <!-- item -->
+                        <!-- item -->
+                        <div class="select-item">
+                          <div class="d-flex">
+                            <div class="icon mr-10 flex-0">
+                              <img src="./images/svg/note.svg" alt="">
+                            </div>
+                            <div class="content flex-1">
+                              <h3 class="title fw-700 lh-19">Ghi chú cho tài xế</h3>
+                              <div class="select-wrapper fs-15 text-gray-77d">
+                              </div>
+                            </div>
+                          </div>
+                          <div class=" fs-15 text-gray-77d">
+                            <textarea class="lh-19 mt-12" name="" id="" rows="5" placeholder="Mô tả hành lý hoặc những vấn đề chưa được liệt kê ở trên"></textarea>
+                          </div>
+                        </div>
+                        <!-- item -->
+                      </div>
+                    </form>
                 </div>
             </div>
-            <!-- end Chọn tài xế -->
-    
-            <!-- loader -->
-            <div class="loader">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="loader-bot fs-11 text-gray-77d text-center">
-                <p>Bạn có thể đóng ứng dụng</p>
-                <p>Hệ thống sẽ gửi thông báo khi có tài xế</p>
-            </div>
-            <!-- end loader -->
         </div>
+        <div class="line"></div>
+        <!-- Chọn tài xế -->
+        <div class="choose-driver mt-20">
+            <h2 class="title text-white fw-300 fs-27 lh-40 mb-10">Chọn tài xế</h2>
+            <div class="list">
+                <!-- item -->
+                <div class="item d-flex bg-gray-0c1 py-10 px-15 -mx-15 mb-20">
+                    <!-- img -->
+                    <div class="artilce-img flex-0 w-35">
+                        <a href="#" class="image-wrapper">
+                            <img src="./images/3.jpg" alt="">
+                        </a>
+                    </div>
+                    <!-- end img -->
+                    <!-- content -->
+                    <div class="article-content flex-1 ml-15">
+                        <h3 class="title lh-24 fw-700 d-flex align-items-center">
+                            Nguyễn Văn Toàn 
+                            <svg  class="ml-10" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-white" d="M14.7002 3.55158L14.6789 3.05047L14.18 2.99923C12.2635 2.8024 10.6159 2.08722 9.57116 1.52191C8.42692 0.902748 7.73332 0.321868 7.72696 0.316507L7.35238 0L6.97755 0.31605C6.97066 0.32185 6.27706 0.902748 5.13284 1.52189C4.08812 2.0872 2.44054 2.80239 0.524025 2.99921L0.0250705 3.05045L0.00376736 3.55157C-4.68266e-05 3.64128 -0.0801974 5.77852 0.743033 8.36652C1.22881 9.89372 1.93033 11.2621 2.82812 12.4337C3.95549 13.9049 5.39343 15.0646 7.10203 15.8806L7.35199 16L7.60195 15.8806C9.31055 15.0646 10.7485 13.905 11.8759 12.4337C12.7737 11.2621 13.4752 9.89371 13.961 8.36654C14.7842 5.77856 14.704 3.64131 14.7002 3.55158ZM7.35199 14.7106C5.92659 13.9863 4.72019 12.9901 3.7629 11.7463C2.94745 10.6869 2.30732 9.44381 1.86024 8.05167C1.31381 6.35009 1.19126 4.83257 1.16646 4.08741C1.93518 3.97327 2.71233 3.78121 3.48367 3.51446C4.23772 3.25369 4.98822 2.92121 5.7143 2.52627C6.45104 2.12555 7.01165 1.74282 7.35197 1.49254C7.6923 1.7428 8.25293 2.12555 8.98966 2.52627C9.71575 2.92122 10.4662 3.25369 11.2203 3.51446C11.9918 3.7813 12.7692 3.97336 13.5382 4.0875C13.5143 4.82534 13.3941 6.32149 12.8554 8.01493C12.4104 9.41395 11.771 10.6633 10.955 11.7282C9.99545 12.9804 8.78431 13.9828 7.35199 14.7106Z" fill="white"/>
+                            <path class="fill-white" d="M10.5134 5.36124L9.70412 6.17055L6.68791 9.18677L5.15926 7.65813L4.9514 7.45027L4.54126 7.8604V7.86042L4.1311 8.27058L6.68791 10.8274L11.3337 6.18155L10.5134 5.36124Z" fill="white"/>
+                            </svg>
+                        </h3>
+                        <p class="name lh-24 mt-4">Volvo S90 - 2021</p>
+                        <div class="bot d-flex algin-items-center mt-4">
+                            <div class="evaluate d-flex align-items-center mr-24">
+                                <svg class="mr-4" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M10.4468 3.78673C10.3871 3.60383 10.2177 3.48066 10.025 3.48066H6.68781L5.65691 0.306679V0.306068C5.59656 0.123164 5.42721 0 5.23445 0C5.04232 0 4.87234 0.123164 4.81261 0.306684L3.7811 3.48066H0.443927C0.251176 3.48066 0.0818169 3.60383 0.0220832 3.78673C-0.0376505 3.96963 0.0263908 4.16916 0.182816 4.28308L2.88322 6.24511L1.85171 9.41971C1.79197 9.60323 1.85787 9.80276 2.01429 9.91545C2.09188 9.97149 2.18303 9.9999 2.27416 9.9999C2.36531 9.9999 2.45646 9.97149 2.53466 9.91483L5.23445 7.95342L7.93363 9.91483C8.08943 10.0281 8.29943 10.0281 8.45524 9.91545C8.61166 9.80276 8.67693 9.60323 8.6172 9.4191L7.58569 6.24511L10.2867 4.28309C10.4425 4.16916 10.5072 3.96963 10.4468 3.78673" fill="white"/>
+                                </svg>
+                                5.0
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <svg class="mr-4" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="strok-white" d="M8.86471 1H0.594238V6.31762H8.86471V1Z" stroke="white" stroke-miterlimit="10"/>
+                                    <path class="strok-white" d="M8.27047 6.31763H1.18237V14H8.27047V6.31763Z" stroke="white" stroke-miterlimit="10"/>
+                                    <path class="strok-white" d="M9.45905 14H0" stroke="white" stroke-miterlimit="10"/>
+                                    <path class="strok-white" d="M6.01713 10.9419C6.01713 11.2834 5.88147 11.6109 5.64 11.8524C5.39852 12.0939 5.07101 12.2295 4.72951 12.2295C4.38802 12.2295 4.0605 12.0939 3.81903 11.8524C3.57755 11.6109 3.44189 11.2834 3.44189 10.9419C3.44189 9.83999 4.72951 8.55237 4.72951 8.55237C4.72951 8.55237 6.01713 9.83999 6.01713 10.9419Z" stroke="white" stroke-miterlimit="10"/>
+                                    <path class="strok-white" d="M2.95898 2.77045V4.54711" stroke="white" stroke-miterlimit="10"/>
+                                    <path class="strok-white" d="M4.72949 2.77045V4.54711" stroke="white" stroke-miterlimit="10"/>
+                                    <path class="strok-white" d="M6.5 2.77045V4.54711" stroke="white" stroke-miterlimit="10"/>
+                                    <path class="strok-white" d="M8.27661 6.3176H10.0471C10.3602 6.31922 10.66 6.44432 10.8814 6.66571C11.1027 6.88709 11.2278 7.18689 11.2295 7.49998V12.2295C11.2295 12.5431 11.354 12.8438 11.5758 13.0656C11.7975 13.2873 12.0983 13.4119 12.4118 13.4119C12.7249 13.4103 13.0247 13.2852 13.2461 13.0638C13.4675 12.8424 13.5926 12.5426 13.5942 12.2295V3.95284L11.2295 1.58807" stroke="white" stroke-miterlimit="10"/>
+                                    <path class="strok-white" d="M12.7585 3.12335C12.6484 3.23151 12.5609 3.36063 12.5014 3.50309C12.4419 3.64555 12.4114 3.79848 12.4119 3.95288C12.4135 4.26596 12.5386 4.56576 12.76 4.78715C12.9814 5.00854 13.2812 5.13363 13.5943 5.13526" stroke="white" stroke-miterlimit="10"/>
+                                </svg>
+                                500k
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content -->
+                </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="item d-flex bg-gray-0c1 py-10 px-15 -mx-15 mb-20">
+                    <!-- img -->
+                    <div class="artilce-img flex-0 w-35">
+                        <a href="#" class="image-wrapper">
+                            <img src="./images/3.jpg" alt="">
+                        </a>
+                    </div>
+                    <!-- end img -->
+                    <!-- content -->
+                    <div class="article-content flex-1 ml-15">
+                        <h3 class="title lh-24 fw-700 d-flex align-items-center">
+                            Nguyễn Văn Toàn 
+                            <svg  class="ml-10" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-white" d="M14.7002 3.55158L14.6789 3.05047L14.18 2.99923C12.2635 2.8024 10.6159 2.08722 9.57116 1.52191C8.42692 0.902748 7.73332 0.321868 7.72696 0.316507L7.35238 0L6.97755 0.31605C6.97066 0.32185 6.27706 0.902748 5.13284 1.52189C4.08812 2.0872 2.44054 2.80239 0.524025 2.99921L0.0250705 3.05045L0.00376736 3.55157C-4.68266e-05 3.64128 -0.0801974 5.77852 0.743033 8.36652C1.22881 9.89372 1.93033 11.2621 2.82812 12.4337C3.95549 13.9049 5.39343 15.0646 7.10203 15.8806L7.35199 16L7.60195 15.8806C9.31055 15.0646 10.7485 13.905 11.8759 12.4337C12.7737 11.2621 13.4752 9.89371 13.961 8.36654C14.7842 5.77856 14.704 3.64131 14.7002 3.55158ZM7.35199 14.7106C5.92659 13.9863 4.72019 12.9901 3.7629 11.7463C2.94745 10.6869 2.30732 9.44381 1.86024 8.05167C1.31381 6.35009 1.19126 4.83257 1.16646 4.08741C1.93518 3.97327 2.71233 3.78121 3.48367 3.51446C4.23772 3.25369 4.98822 2.92121 5.7143 2.52627C6.45104 2.12555 7.01165 1.74282 7.35197 1.49254C7.6923 1.7428 8.25293 2.12555 8.98966 2.52627C9.71575 2.92122 10.4662 3.25369 11.2203 3.51446C11.9918 3.7813 12.7692 3.97336 13.5382 4.0875C13.5143 4.82534 13.3941 6.32149 12.8554 8.01493C12.4104 9.41395 11.771 10.6633 10.955 11.7282C9.99545 12.9804 8.78431 13.9828 7.35199 14.7106Z" fill="white"/>
+                            <path class="fill-white" d="M10.5134 5.36124L9.70412 6.17055L6.68791 9.18677L5.15926 7.65813L4.9514 7.45027L4.54126 7.8604V7.86042L4.1311 8.27058L6.68791 10.8274L11.3337 6.18155L10.5134 5.36124Z" fill="white"/>
+                            </svg>
+                        </h3>
+                        <p class="name lh-24 mt-4">Volvo S90 - 2021</p>
+                        <div class="bot d-flex algin-items-center mt-4">
+                            <div class="evaluate d-flex align-items-center mr-24">
+                                <svg class="mr-4" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M10.4468 3.78673C10.3871 3.60383 10.2177 3.48066 10.025 3.48066H6.68781L5.65691 0.306679V0.306068C5.59656 0.123164 5.42721 0 5.23445 0C5.04232 0 4.87234 0.123164 4.81261 0.306684L3.7811 3.48066H0.443927C0.251176 3.48066 0.0818169 3.60383 0.0220832 3.78673C-0.0376505 3.96963 0.0263908 4.16916 0.182816 4.28308L2.88322 6.24511L1.85171 9.41971C1.79197 9.60323 1.85787 9.80276 2.01429 9.91545C2.09188 9.97149 2.18303 9.9999 2.27416 9.9999C2.36531 9.9999 2.45646 9.97149 2.53466 9.91483L5.23445 7.95342L7.93363 9.91483C8.08943 10.0281 8.29943 10.0281 8.45524 9.91545C8.61166 9.80276 8.67693 9.60323 8.6172 9.4191L7.58569 6.24511L10.2867 4.28309C10.4425 4.16916 10.5072 3.96963 10.4468 3.78673" fill="white"/>
+                                </svg>
+                                5.0
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <svg class="mr-4" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="fill-white" d="M18 3V1.33C17.9974 0.978071 17.8564 0.641298 17.6076 0.39244C17.3587 0.143581 17.0219 0.00261668 16.67 5.20267e-10H1.34C0.986336 -9.8477e-06 0.647008 0.139795 0.395995 0.388935C0.144982 0.638075 0.00263929 0.976346 5.20266e-10 1.33V8.66C-9.8477e-06 9.01366 0.139795 9.35299 0.388935 9.60401C0.638075 9.85502 0.976346 9.99736 1.33 10H16.67C17.0219 9.99738 17.3587 9.85642 17.6076 9.60756C17.8564 9.3587 17.9974 9.02193 18 8.67V7H20V3H18ZM9.5 6V8L2 4H7.5V2L15 6H9.5Z" fill="white"/>
+                                </svg>
+                                500k
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content -->
+                </div>
+                <!-- end item -->
+            </div>
+        </div>
+        <!-- end Chọn tài xế -->
+
+        <!-- loader -->
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="loader-bot fs-11 text-gray-77d text-center">
+            <p>Bạn có thể đóng ứng dụng</p>
+            <p>Hệ thống sẽ gửi thông báo khi có tài xế</p>
+        </div>
+        <!-- end loader -->
     </main>
     <!-- end main -->
 

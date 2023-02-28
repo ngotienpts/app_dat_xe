@@ -15,6 +15,14 @@ html ::-webkit-scrollbar {
   max-height: calc(100vh - 400px);
   overflow-y: overlay;
 }
+.custom-scroll-200 {
+  max-height: calc(100vh - 200px);
+  overflow-y: overlay;
+}
+.custom-scroll-100 {
+  max-height: calc(100vh - 100px);
+  overflow-y: overlay;
+}
 .block-header {
   position: sticky;
   top: 0;
@@ -41,8 +49,9 @@ html ::-webkit-scrollbar {
   }
 }
 .block-main {
-  margin-top: 45px;
-  // margin-bottom: 120px;
+  margin-top: 15px;
+  padding-top: 30px;
+  padding-bottom: 45px;
 
   & .form-search {
     background-color: var(--gray--0c1);

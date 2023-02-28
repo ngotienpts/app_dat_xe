@@ -63,3 +63,19 @@
 .loader-bot {
   margin-top: calc(var(--mt-100) + 64px);
 }
+.see-details {
+  & img {
+    transition: transform 0.4s;
+  }
+  &.active {
+    img {
+      transform: rotate(180deg);
+    }
+    ~ .hide-select {
+      display: block;
+    }
+  }
+}
+.hide-select {
+  display: none;
+}
