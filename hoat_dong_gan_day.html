@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon//apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon//apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon//apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon//apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon//apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon//apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon//apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon//apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon//manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- end favicon -->
+  <title>A2b</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <section class="block-header text-white px-15 py-12 d-flex align-items-center justify-content-between">
+      <!-- left -->
+      <div class="left">
+        <a href="#">
+          <div class="">
+            <img src="./images/svg/notification.svg" alt="">
+          </div>
+        </a>
+      </div>
+      <!-- end left -->
+      <!-- center -->
+      <div class="center">
+        <a href="#">
+          <h1 class="heading">
+            <span class="heading__text">Nhật ký</span>
+
+          </h1>
+        </a>
+      </div>
+      <!-- end center -->
+      <!-- right -->
+      <div class="right">
+        <a href="#">
+          <div class="user">
+            <img src="./images/svg/user.svg" alt="">
+          </div>
+        </a>
+      </div>
+      <!-- end right -->
+    </section>
+    <!-- end header -->
+
+    <!-- main -->
+    <main class="block-main block-home px-15 custom-scroll-100">
+      <h2 class="title text-white fw-300 fs-27 lh-40 d-flex align-items-center justify-content-between">Hoạt động gần đây</h2>
+      <div class="tabs-box">
+        <!-- tabs -->
+          <ul class="tabs d-flex align-items-center justify-content-between bg-gray-161 p-8 border-10">
+            <li class="tab-item">Hành khách</li>
+            <li class="tab-item active">Tài xế</li>
+            <li class="tab-item">Giao dịch</li>
+          </ul>
+          <!-- end tabs -->
+          <!-- content -->
+          <div class="tab-content mt-15">
+                <!-- pane -->
+                <div class="tab-pane">
+                    <!-- stage -->
+                    <div class="stage mb-15">
+                        <h3 class="heading mb-8">Tuần này</h3>
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <div class="route">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3 class="title fw-700 mb-12">Nguyễn Văn Hùng</h3>
+                                        <!-- trạng thái -->
+                                        <div class="status status--warning d-flex align-items-center mb-12">
+                                            <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                            </svg>
+                                            Đã báo giá
+                                        </div>
+                                        <!-- end trạng thái -->
+                                    </div>
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex mb-12">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài </p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                    <!-- thời gian khởi hành -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/time.svg" class="mr-10" alt="">
+                                        <p>Khởi hành: 8:30</p>
+                                    </div>
+                                    <!-- end thời gian khởi hành -->
+                                    <!-- thời ghi chú -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/note.svg" class="mr-10" alt="">
+                                        <p>Có 2 hành lý kèm 1 con mèo</p>
+                                    </div>
+                                    <!-- end thời ghi chú -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <div class="route">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3 class="title fw-700 mb-12">Nguyễn Văn Hùng</h3>
+                                        <!-- trạng thái -->
+                                        <div class="status status--success d-flex align-items-center mb-12">
+                                            <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                            </svg>
+                                            Đã xác nhận
+                                        </div>
+                                        <!-- end trạng thái -->
+                                    </div>
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex mb-12">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài </p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                    <!-- thời gian khởi hành -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/time.svg" class="mr-10" alt="">
+                                        <p>Khởi hành: 8:30</p>
+                                    </div>
+                                    <!-- end thời gian khởi hành -->
+                                    <!-- thời ghi chú -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/note.svg" class="mr-10" alt="">
+                                        <p>Có 2 hành lý kèm 1 con mèo</p>
+                                    </div>
+                                    <!-- end thời ghi chú -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <div class="route">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3 class="title fw-700 mb-12">Nguyễn Văn Hùng</h3>
+                                        <!-- trạng thái -->
+                                        <div class="status status--danger d-flex align-items-center mb-12">
+                                            <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                            </svg>
+                                            Hủy
+                                        </div>
+                                        <!-- end trạng thái -->
+                                    </div>
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex mb-12">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài </p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                    <!-- thời gian khởi hành -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/time.svg" class="mr-10" alt="">
+                                        <p>Khởi hành: 8:30</p>
+                                    </div>
+                                    <!-- end thời gian khởi hành -->
+                                    <!-- thời ghi chú -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/note.svg" class="mr-10" alt="">
+                                        <p>Có 2 hành lý kèm 1 con mèo</p>
+                                    </div>
+                                    <!-- end thời ghi chú -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+
+                    </div>
+                    <!-- end stage -->
+                    <!-- stage -->
+                    <div class="stage mb-15">
+                        <h3 class="heading mb-8">Tháng này</h3>
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <div class="route">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3 class="title fw-700 mb-12">Nguyễn Văn Hùng</h3>
+                                        <!-- trạng thái -->
+                                        <div class="status status--warning d-flex align-items-center mb-12">
+                                            <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                            </svg>
+                                            Đã báo giá
+                                        </div>
+                                        <!-- end trạng thái -->
+                                    </div>
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex mb-12">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài </p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                    <!-- thời gian khởi hành -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/time.svg" class="mr-10" alt="">
+                                        <p>Khởi hành: 8:30</p>
+                                    </div>
+                                    <!-- end thời gian khởi hành -->
+                                    <!-- thời ghi chú -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/note.svg" class="mr-10" alt="">
+                                        <p>Có 2 hành lý kèm 1 con mèo</p>
+                                    </div>
+                                    <!-- end thời ghi chú -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <div class="route">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3 class="title fw-700 mb-12">Nguyễn Văn Hùng</h3>
+                                        <!-- trạng thái -->
+                                        <div class="status status--success d-flex align-items-center mb-12">
+                                            <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                            </svg>
+                                            Đã xác nhận
+                                        </div>
+                                        <!-- end trạng thái -->
+                                    </div>
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex mb-12">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài </p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                    <!-- thời gian khởi hành -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/time.svg" class="mr-10" alt="">
+                                        <p>Khởi hành: 8:30</p>
+                                    </div>
+                                    <!-- end thời gian khởi hành -->
+                                    <!-- thời ghi chú -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/note.svg" class="mr-10" alt="">
+                                        <p>Có 2 hành lý kèm 1 con mèo</p>
+                                    </div>
+                                    <!-- end thời ghi chú -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <div class="route">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3 class="title fw-700 mb-12">Nguyễn Văn Hùng</h3>
+                                        <!-- trạng thái -->
+                                        <div class="status status--danger d-flex align-items-center mb-12">
+                                            <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                            </svg>
+                                            Hủy
+                                        </div>
+                                        <!-- end trạng thái -->
+                                    </div>
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex mb-12">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài </p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                    <!-- thời gian khởi hành -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/time.svg" class="mr-10" alt="">
+                                        <p>Khởi hành: 8:30</p>
+                                    </div>
+                                    <!-- end thời gian khởi hành -->
+                                    <!-- thời ghi chú -->
+                                    <div class="start d-flex mb-12">
+                                        <img src="./images/svg/note.svg" class="mr-10" alt="">
+                                        <p>Có 2 hành lý kèm 1 con mèo</p>
+                                    </div>
+                                    <!-- end thời ghi chú -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+
+                    </div>
+                    <!-- end stage -->
+                </div>
+                <!-- end pane -->
+                <!-- pane -->
+                <div class="tab-pane active">
+                    <!-- stage -->
+                    <div class="stage mb-15">
+                        <h3 class="heading mb-8">Tuần này</h3>
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <!-- trạng thái -->
+                                <div class="status status--warning d-flex align-items-center mb-12">
+                                    <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                    </svg>
+                                    Đang chờ
+                                </div>
+                                <!-- end trạng thái -->
+                                <div class="route">
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài </p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <!-- trạng thái -->
+                                <div class="status status--success d-flex align-items-center mb-12">
+                                    <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                    </svg>
+                                    Hoàn thành
+                                </div>
+                                <!-- end trạng thái -->
+                                <div class="route">
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài</p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <!-- trạng thái -->
+                                <div class="status status--danger d-flex align-items-center mb-12">
+                                    <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                    </svg>
+                                    Hủy
+                                </div>
+                                <!-- end trạng thái -->
+                                
+                                <div class="route">
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài</p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+
+                    </div>
+                    <!-- end stage -->
+                    <!-- stage -->
+                    <div class="stage mb-15">
+                        <h3 class="heading mb-8">Tháng này</h3>
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <!-- trạng thái -->
+                                <div class="status status--warning d-flex align-items-center mb-12">
+                                    <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                    </svg>
+                                    Đang chờ
+                                </div>
+                                <!-- end trạng thái -->
+                                
+
+                                <div class="route">
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài</p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="stage-item mb-15">
+                            <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                                <!-- trạng thái -->
+                                <div class="status status--success d-flex align-items-center mb-12">
+                                    <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                    </svg>
+                                    Hoàn thành
+                                </div>
+                                <!-- end trạng thái -->
+                                
+                                <div class="route">
+                                    <!-- điểm đầu -->
+                                    <div class="first-point d-flex mb-12">
+                                        <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                        <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội </p>
+                                    </div>
+                                    <!-- end điểm đầu -->
+                                    <div class="dots"></div>
+                                    <!-- điểm cuối -->
+                                    <div class="final-point d-flex">
+                                        <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                        <p>Cảng hàng không quốc tế Nội Bài</p>
+                                    </div>
+                                    <!-- end điểm cuối -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item -->
+
+                    </div>
+                    <!-- end stage -->
+                </div>
+                <!-- end pane -->
+                <!-- pane -->
+                <div class="tab-pane">
+                    <ul class="notification-list -mx-15 mb-120">
+                        <li class="notification-item bg-gray-0c1 px-15 py-10 position-relative mb-12">
+                            <p class="text-italic mb-12">3 phút trước</p>
+                            <p class="text-italic">Bạn đã nạp 500k thành công</p>
+                            <span class="dot position-absolute bg-red-84"></span>
+                        </li>
+                        <li class="notification-item bg-gray-0c1 px-15 py-10 position-relative mb-12">
+                            <p class="text-italic mb-12">3 phút trước</p>
+                            <p class="text-italic">Bạn đã nạp 500k thành công</p>
+                            <span class="dot position-absolute bg-red-84"></span>
+                        </li>
+                        <li class="notification-item bg-gray-0c1 px-15 py-10 position-relative mb-12">
+                            <p class="text-italic mb-12">3 phút trước</p>
+                            <p class="text-italic">Bạn đã nạp 500k thành công</p>
+                            <span class="dot position-absolute bg-red-84"></span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end pane -->
+          </div>
+          <!-- end content -->
+      </div>
+        
+        
+    </main>
+    <!-- end main -->
+
+    
+    <!-- footer -->
+    <section class="block-footer px-15 py-12 d-flex align-items-center justify-content-between">
+        <!-- left -->
+        <div class="left">
+          <a href="#">
+            <div class="item text-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="fill" d="M12 0L0 9.998V24H7.998V16H16V24H23.998V9.998L12 0Z" fill="white"/>
+              </svg>
+              <p class="text fs-13 lh-20 fw-300">Trang chủ</p>
+            </div>
+          </a>
+        </div>
+        <!-- end left -->
+        <!-- center -->
+        <div class="center">
+          <a href="#">
+            <div class="item text-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill" d="M12 0C5.36623 0 0 5.36623 0 12C0 18.6338 5.36623 24 12 24C18.6338 24 24 18.6338 24 12C24 5.36623 18.6338 0 12 0ZM12 1.55844C17.761 1.55844 22.4416 6.23896 22.4416 12C22.4416 17.761 17.761 22.4416 12 22.4416C6.23896 22.4416 1.55844 17.761 1.55844 12C1.55844 6.23896 6.23896 1.55844 12 1.55844ZM2.88416 9.29351C2.63948 10.2909 2.49351 11.2156 2.49351 12.0987C10.0104 13.6727 8.80519 15.3403 10.1818 21.3351C10.774 21.4442 11.3766 21.5065 12 21.5065C12.6234 21.5065 13.226 21.4442 13.8182 21.3351C15.1948 15.3403 13.9896 13.6727 21.5065 12.0987C21.4753 11.1169 21.3506 10.1039 21.1169 9.29351C16.7117 8.19221 14.3429 7.63636 12 7.63636C9.65714 7.63636 7.28831 8.19221 2.88416 9.29351ZM12 8.20779C14.0883 8.20779 15.7922 9.91169 15.7922 12C15.7922 14.0883 14.0883 15.7922 12 15.7922C9.91169 15.7922 8.20779 14.0883 8.20779 12C8.20779 9.91169 9.91169 8.20779 12 8.20779ZM12 9.14286C10.4156 9.14286 9.14286 10.4156 9.14286 12C9.14286 13.5844 10.4156 14.8571 12 14.8571C13.5844 14.8571 14.8571 13.5844 14.8571 12C14.8571 10.4156 13.5844 9.14286 12 9.14286Z" fill="#777D92"/>
+                </svg>
+              <p class="text fs-13 lh-20 fw-300">Lái xe</p>
+            </div>
+          </a>
+        </div>
+        <!-- end center -->
+        <!-- right -->
+        <div class="right">
+          <a href="#">
+            <div class="item text-center active">
+              <svg width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="strock" d="M1 10.7493C1 4.91672 2.25009 3.66663 8.08267 3.66663H17.9173C23.7499 3.66663 25 4.91672 25 10.7493V17.9173C25 23.7498 23.7499 25 17.9173 25H8.08267C2.25009 25 1 23.7498 1 17.9173V10.7493Z" stroke="#777D92" stroke-width="1.5"/>
+                <path class="strock" d="M5 3.66667V1" stroke="#777D92" stroke-width="1.5" stroke-linecap="round"/>
+                <path class="strock" d="M21 3.66667V1" stroke="#777D92" stroke-width="1.5" stroke-linecap="round"/>
+                <path class="strock" d="M6.33325 9H19.6666" stroke="#777D92" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <p class="text fs-13 lh-20 fw-300">Nhật ký</p>
+            </div>
+          </a>
+        </div>
+        <!-- end right -->
+      </section>
+      <!-- end footer -->
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -15,6 +15,31 @@
   }
 }
 .select-list {
+  & select {
+    appearance: none;
+    background: transparent;
+    font-size: inherit;
+    color: inherit;
+    max-width: 100%;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    & option {
+      color: inherit;
+      background: inherit;
+      font-size: inherit;
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+  }
   & .select-item {
     margin-bottom: 20px;
   }

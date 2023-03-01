@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
   //
   var showSelects = document.querySelectorAll(".js_show-select");
 
+  // route
+  var routes = document.querySelectorAll(".route");
+
+  // tabs
+  var tabs = document.querySelectorAll(".tab-item");
+  var panes = document.querySelectorAll(".tab-pane");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -69,6 +76,62 @@ document.addEventListener("DOMContentLoaded", function () {
           };
         });
       }
+      // tabs
+      if (tabs && panes) {
+        tabs.forEach((tab, index) => {
+          var pane = panes[index];
+
+          tab.onclick = function () {
+            document
+              .querySelector(".tab-item.active")
+              .classList.remove("active");
+            document
+              .querySelector(".tab-pane.active")
+              .classList.remove("active");
+
+            this.classList.add("active");
+            pane.classList.add("active");
+          };
+        });
+      }
+      // route
+      if (routes) {
+        routes.forEach((route) => {
+          var firstPoint = route.querySelector(".first-point");
+          var finalPoint = route.querySelector(".final-point");
+          var dots = route.querySelector(".dots");
+          var spaceBetween = _this.getDistanceBetweenElements(
+            firstPoint,
+            finalPoint
+          );
+          var count = Math.floor(spaceBetween / 9);
+
+          for (var i = 0; i < count; i++) {
+            dots.appendChild(document.createElement("span"));
+          }
+          if (count > 4) {
+            dots.style.height = Math.floor(spaceBetween / 1.5) + "px";
+          } else if (count > 7) {
+            dots.style.height = Math.floor(spaceBetween / 1) + "px";
+          } else {
+            dots.style.height = Math.floor(spaceBetween / 2) + "px";
+          }
+        });
+      }
+    },
+    //
+    getPositionAtCenter: function (element) {
+      const { top, left, width, height } = element.getBoundingClientRect();
+      return {
+        x: left + width / 2,
+        y: top + height / 2,
+      };
+    },
+    getDistanceBetweenElements: function (a, b) {
+      const aPosition = this.getPositionAtCenter(a);
+      const bPosition = this.getPositionAtCenter(b);
+
+      return Math.hypot(aPosition.x - bPosition.x, aPosition.y - bPosition.y);
     },
     // scroll top
     scrollFunc: function () {},

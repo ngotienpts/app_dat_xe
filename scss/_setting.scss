@@ -1,0 +1,9 @@
+.panels-item {
+  border: 1px solid var(--gray--77d);
+  border-radius: 3px;
+  height: 32px;
+
+  + .panels-item {
+    margin-left: 15px;
+  }
+}

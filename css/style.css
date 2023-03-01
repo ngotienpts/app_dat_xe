@@ -330,6 +330,10 @@ img {
   font-size: 2.5rem;
 }
 
+.fs-42 {
+  font-size: 2.625rem;
+}
+
 .fs-48 {
   font-size: 3rem;
 }
@@ -831,6 +835,36 @@ img {
 }
 
 /*=================================================================*/
+.pt-24 {
+  padding-top: 1.5rem;
+}
+
+.pb-24 {
+  padding-bottom: 1.5rem;
+}
+
+.pl-24 {
+  padding-left: 1.5rem;
+}
+
+.pr-24 {
+  padding-right: 1.5rem;
+}
+
+.py-24 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-24 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.p-24 {
+  padding: 1.5rem;
+}
+
 .mt-24 {
   margin-top: 1.5rem;
 }
@@ -886,6 +920,15 @@ img {
   -moz-border-radius: 0.375rem;
   -ms-border-radius: 0.375rem;
   -o-border-radius: 0.375rem;
+}
+
+.border-10 {
+  border-radius: 0.625rem;
+  overflow: hidden;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
 }
 
 /*=================================================================*/
@@ -966,6 +1009,10 @@ img {
   line-height: 2.875rem;
 }
 
+.lh-48 {
+  line-height: 3rem;
+}
+
 /*=================================================================*/
 .position-relative {
   position: relative;
@@ -1027,6 +1074,14 @@ img {
 
 .flex-1 {
   flex: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.baseline {
+  align-items: baseline;
 }
 
 /*=================================================================*/
@@ -1236,6 +1291,30 @@ html ::-webkit-scrollbar {
   background-color: var(--white);
 }
 
+.select-list select {
+  appearance: none;
+  background: transparent;
+  font-size: inherit;
+  color: inherit;
+  max-width: 100%;
+  padding: 5px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  /* Remove IE arrow */
+}
+.select-list select option {
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+  outline: none;
+}
+.select-list select:focus {
+  outline: none;
+}
+.select-list select::-ms-expand {
+  display: none;
+}
 .select-list .select-item {
   margin-bottom: 20px;
 }
@@ -1452,6 +1531,25 @@ textarea::placeholder {
   transform: translateY(-50%);
 }
 
+.expected .expected-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.expected .expected-item:nth-child(2) {
+  border-right: 1px solid #222b35;
+  border-left: 1px solid #222b35;
+}
+.expected .expected-item:first-child {
+  padding-right: 10px;
+}
+.expected .expected-item .des {
+  flex: 0;
+}
+
 .btn-copy {
   right: 0;
 }
@@ -1517,6 +1615,64 @@ textarea::placeholder {
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
+}
+
+.tabs-box .tab-item {
+  background-color: transparent;
+  padding: 4px 16px;
+  border-radius: 10px;
+}
+.tabs-box .tab-item.active {
+  background-color: var(--black);
+}
+.tabs-box .tab-pane:not(.active) {
+  display: none;
+}
+.tabs-box .status--warning {
+  color: #ffb848;
+}
+.tabs-box .status--warning svg path {
+  fill: #ffb848;
+}
+.tabs-box .status--success {
+  color: var(--cyan-2f);
+}
+.tabs-box .status--success svg path {
+  fill: var(--cyan-2f);
+}
+.tabs-box .status--danger {
+  color: var(--red--e84);
+}
+.tabs-box .status--danger svg path {
+  fill: var(--red--e84);
+}
+.tabs-box .route {
+  position: relative;
+}
+.tabs-box .dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+}
+.tabs-box .dots span {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.panels-item {
+  border: 1px solid var(--gray--77d);
+  border-radius: 3px;
+  height: 32px;
+}
+.panels-item + .panels-item {
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
