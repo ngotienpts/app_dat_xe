@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon//apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon//apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon//apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon//apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon//apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon//apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon//apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon//apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon//manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- end favicon -->
+  <title>A2b</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <section class="block-header text-white px-15 py-12 d-flex align-items-center justify-content-between">
+      <!-- left -->
+      <div class="left">
+        <a href="#">
+            <div class="">
+                <img src="./images/svg/prev.svg" alt="">
+            </div>
+        </a>
+      </div>
+      <!-- end left -->
+      <!-- center -->
+      <div class="center">
+        <a href="#">
+          <h1 class="heading">
+            <span class="heading__text">Xe tìm khách</span>
+
+          </h1>
+        </a>
+      </div>
+      <!-- end center -->
+      <!-- right -->
+      <div class="right">
+        <a href="#">
+          <div class="user">
+            <img src="./images/svg/user.svg" alt="">
+          </div>
+        </a>
+      </div>
+      <!-- end right -->
+    </section>
+    <!-- end header -->
+
+    <!-- main -->
+    <main class="block-main block-home px-15 custom-scroll-100">
+      <h2 class="title text-white fw-300 fs-27 lh-40 d-flex align-items-center justify-content-between">Cung đường của bạn</h2>
+        <ul class="destination-list find-customers">
+            <!-- item -->
+            <li class="destination-item d-flex">
+                <div class="icon mr-10 flex-0">
+                    <img src="./images/svg/current-position.svg" alt="">
+                </div>
+                <div class="content flex-1">
+                    <h3 class="title fw-700 lh-19">Khởi hành: vị trí hiện tại</h3>
+                    <input type="text" class="h-32 flex-1 w-100 border-10 py-4 px-12 fs-15 text-gray-77d" placeholder="Vị trí hiện tại" >
+                    
+                </div>
+            </li>
+
+            <!-- end item -->
+            <li class="destination-item d-flex">
+                <div class="icon mr-10 flex-0">
+                    <img src="./images/svg/location.svg" alt="">
+                </div>
+                <div class="content flex-1">
+                    <h3 class="title fw-700 lh-19">Kết thúc</h3>
+                    <input type="text" class="h-32 flex-1 w-100 border-10 py-4 px-12 fs-15 text-gray-77d" placeholder="Điểm kết thúc" >
+                </div>
+            </li>
+            <!-- end item -->
+            
+            <!-- item -->
+            <li class="destination-item d-flex">
+                <div class="icon mr-10 flex-0">
+                    <img src="./images/svg/time.svg" alt="">
+                </div>
+                <div class="content flex-1">
+                    <h3 class="title fw-700 lh-19">Thời gian khởi hành</h3>
+                    <input type="text" class="h-32 flex-1 w-100 border-10 py-4 px-12 fs-15 text-gray-77d" placeholder="Thời gian khởi hành" >
+                </div>
+            </li>
+            <!-- end item -->
+
+            <!-- item -->
+            <li class="destination-item d-flex">
+                <div class="icon mr-10 flex-0">
+                    <img src="./images/svg/zoom.svg" alt="">
+                </div>
+                <div class="content flex-1">
+                    <h3 class="title fw-700 lh-19">Phạm vi đón trẩ khách</h3>
+                    <input type="text" class="h-32 flex-1 w-100 border-10 py-4 px-12 fs-15 text-gray-77d" placeholder="Phạm vi đón trả khách" >
+                </div>
+            </li>
+            <!-- end item -->
+        </ul>
+
+        <div class="line -mx-15 mb-15"></div>
+
+        <h2 class="title text-white fw-300 fs-27 lh-40 d-flex align-items-center justify-content-between">Khách phù hợp</h2>
+
+        <div class="tabs-box mt-20">
+            <!-- stage -->
+            <div class="stage mb-15">
+                <!-- item -->
+                <div class="stage-item mb-15">
+                    <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                        <div class="route">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3 class="title fw-700 mb-12">Nguyễn Văn Hùng</h3>
+                                <!-- trạng thái -->
+                                <div class="status status--warning d-flex align-items-center mb-12">
+                                    <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                    </svg>
+                                    Đã báo giá
+                                </div>
+                                <!-- end trạng thái -->
+                            </div>
+                            <!-- điểm đầu -->
+                            <div class="first-point d-flex mb-12">
+                                <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                            </div>
+                            <!-- end điểm đầu -->
+                            <div class="dots"></div>
+                            <!-- điểm cuối -->
+                            <div class="final-point d-flex mb-12">
+                                <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                <p>Cảng hàng không quốc tế Nội Bài </p>
+                            </div>
+                            <!-- end điểm cuối -->
+                            <!-- thời gian khởi hành -->
+                            <div class="start d-flex mb-12">
+                                <img src="./images/svg/time.svg" class="mr-10" alt="">
+                                <p>Khởi hành: 8:30</p>
+                            </div>
+                            <!-- end thời gian khởi hành -->
+                            <!-- thời ghi chú -->
+                            <div class="start d-flex mb-12">
+                                <img src="./images/svg/note.svg" class="mr-10" alt="">
+                                <p>Có 2 hành lý kèm 1 con mèo</p>
+                            </div>
+                            <!-- end thời ghi chú -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="stage-item mb-15">
+                    <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                        <div class="route">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3 class="title fw-700 mb-12">Nguyễn Văn Hùng</h3>
+                                <!-- trạng thái -->
+                                <div class="status status--success d-flex align-items-center mb-12">
+                                    <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                    </svg>
+                                    Đã xác nhận
+                                </div>
+                                <!-- end trạng thái -->
+                            </div>
+                            <!-- điểm đầu -->
+                            <div class="first-point d-flex mb-12">
+                                <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                            </div>
+                            <!-- end điểm đầu -->
+                            <div class="dots"></div>
+                            <!-- điểm cuối -->
+                            <div class="final-point d-flex mb-12">
+                                <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                <p>Cảng hàng không quốc tế Nội Bài </p>
+                            </div>
+                            <!-- end điểm cuối -->
+                            <!-- thời gian khởi hành -->
+                            <div class="start d-flex mb-12">
+                                <img src="./images/svg/time.svg" class="mr-10" alt="">
+                                <p>Khởi hành: 8:30</p>
+                            </div>
+                            <!-- end thời gian khởi hành -->
+                            <!-- thời ghi chú -->
+                            <div class="start d-flex mb-12">
+                                <img src="./images/svg/note.svg" class="mr-10" alt="">
+                                <p>Có 2 hành lý kèm 1 con mèo</p>
+                            </div>
+                            <!-- end thời ghi chú -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="stage-item mb-15">
+                    <div class="-mx-15 bg-gray-0c1 px-15 py-12">
+                        <div class="route">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3 class="title fw-700 mb-12">Nguyễn Văn Hùng</h3>
+                                <!-- trạng thái -->
+                                <div class="status status--danger d-flex align-items-center mb-12">
+                                    <svg class="mr-10" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.00343 9.57829L5.22629 7.8C5.16258 7.73629 5.08694 7.68575 5.0037 7.65127C4.92046 7.61679 4.83124 7.59905 4.74114 7.59905C4.65104 7.59905 4.56183 7.61679 4.47859 7.65127C4.39534 7.68575 4.31971 7.73629 4.256 7.8C4.12733 7.92867 4.05505 8.10318 4.05505 8.28514C4.05505 8.46711 4.12733 8.64162 4.256 8.77029L6.51886 11.0331C6.58239 11.0972 6.65796 11.148 6.74123 11.1827C6.82449 11.2174 6.9138 11.2352 7.004 11.2352C7.0942 11.2352 7.18351 11.2174 7.26677 11.1827C7.35004 11.148 7.42561 11.0972 7.48914 11.0331L12.1749 6.34629C12.2394 6.28284 12.2908 6.20724 12.326 6.12385C12.3612 6.04045 12.3795 5.95091 12.3799 5.8604C12.3804 5.76988 12.3629 5.68017 12.3284 5.59646C12.294 5.51274 12.2434 5.43666 12.1794 5.37262C12.1154 5.30858 12.0394 5.25783 11.9557 5.22331C11.872 5.18879 11.7824 5.17118 11.6918 5.1715C11.6013 5.17181 11.5118 5.19004 11.4283 5.22514C11.3449 5.26024 11.2692 5.31151 11.2057 5.376L7.00343 9.57829Z" fill="white"/>
+                                    </svg>
+                                    Hủy
+                                </div>
+                                <!-- end trạng thái -->
+                            </div>
+                            <!-- điểm đầu -->
+                            <div class="first-point d-flex mb-12">
+                                <img src="./images/svg/current-position.svg" class="mr-10" alt="">
+                                <p>235, Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                            </div>
+                            <!-- end điểm đầu -->
+                            <div class="dots"></div>
+                            <!-- điểm cuối -->
+                            <div class="final-point d-flex mb-12">
+                                <img src="./images/svg/location.svg" class="mr-10" alt="">
+                                <p>Cảng hàng không quốc tế Nội Bài </p>
+                            </div>
+                            <!-- end điểm cuối -->
+                            <!-- thời gian khởi hành -->
+                            <div class="start d-flex mb-12">
+                                <img src="./images/svg/time.svg" class="mr-10" alt="">
+                                <p>Khởi hành: 8:30</p>
+                            </div>
+                            <!-- end thời gian khởi hành -->
+                            <!-- thời ghi chú -->
+                            <div class="start d-flex mb-12">
+                                <img src="./images/svg/note.svg" class="mr-10" alt="">
+                                <p>Có 2 hành lý kèm 1 con mèo</p>
+                            </div>
+                            <!-- end thời ghi chú -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end item -->
+
+            </div>
+            <!-- end stage -->
+        </div>
+
+        <!-- loader -->
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="loader-bot fs-11 text-gray-77d text-center">
+            <p>Bạn có thể đóng ứng dụng</p>
+            <p>Hệ thống sẽ gửi thông báo khi có tài xế</p>
+        </div>
+        <!-- end loader -->
+        
+    </main>
+    <!-- end main -->
+
+    <!-- footer -->
+    <section class="block-footer block-footer--secondary px-15 py-12 d-flex align-items-center justify-content-between">
+        <button class="btn bg-red-84 fs-16 flex-0">
+            <img src="./images/svg/power.svg" alt="">
+        </button>
+        <button class="btn bg-gray-161 fs-16 flex-1 position-relative">
+            <div class="position-absolute triple-next-icon">
+                <img src="./images/svg/triple-next.svg" alt="">
+            </div>
+            Tắt nhận chuyến
+        </button>
+    </section>
+    <!-- end footer -->
+  
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

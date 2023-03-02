@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var tabs = document.querySelectorAll(".tab-item");
   var panes = document.querySelectorAll(".tab-pane");
 
+  // setting
+  var settingItems = document.querySelectorAll(".js_setting_item");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -116,6 +119,35 @@ document.addEventListener("DOMContentLoaded", function () {
           } else {
             dots.style.height = Math.floor(spaceBetween / 2) + "px";
           }
+        });
+      }
+
+      // setting
+      if (settingItems) {
+        settingItems.forEach((settingItem) => {
+          var title = settingItem.querySelector(".js_setting_title");
+          var name = settingItem.querySelector(".name");
+          var valid = settingItem.querySelector(".name.valid");
+          var input = settingItem.querySelector(".js_setting_changeText input");
+          var btnSave = settingItem.querySelector(".btn-save");
+          var invalid = settingItem.querySelector(".invalid");
+          title.onclick = function () {
+            this.parentElement.classList.toggle("active");
+            input.focus();
+            if (input.value === "") {
+              input.value = name.innerText;
+            }
+          };
+
+          btnSave.onclick = function () {
+            if (input.value == "" && !valid) {
+              invalid.classList.add("active");
+            } else {
+              name.innerText = input.value;
+              settingItem.classList.remove("active");
+              invalid.classList.remove("active");
+            }
+          };
         });
       }
     },

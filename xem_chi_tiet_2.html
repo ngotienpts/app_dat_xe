@@ -204,9 +204,39 @@
 
         <div class="line"></div>
 
+        <!-- bảng tính tiền -->
+        <div class="money-table bg-white -mx-15 p-15 text-black">
+            <h2 class="title fw-300 fs-27 lh-40 d-flex align-items-center justify-content-between">Bảng tính</h2>
+            <div class=" py-8 d-flex align-items-center justify-content-between">
+                <h3 class="title">Thời gian dự tính</h3>
+                <span class="name">45 phút</span>
+            </div>
+            <div class="py-8 d-flex align-items-center justify-content-between">
+                <h3 class="title">Khoảng cách</h3>
+                <span class="name">30km</span>
+            </div>
+            <div class="py-8 d-flex align-items-center justify-content-between">
+                <h3 class="title">Chia sẻ xăng xe (VND)</h3>
+                <span class="name fw-700">210000</span>
+            </div>
+            <button class="btn bg-cyan-2f fs-16 flex-1 w-100">
+                Gửi khách
+            </button>
+            <div class="py-8 d-flex align-items-center justify-content-between">
+                <h3 class="title">Số dư xu</h3>
+                <span class="name">30k</span>
+            </div>
+            <div class="py-8 d-flex align-items-center justify-content-between">
+                <h3 class="title">Phí nên tảng (3%)</h3>
+                <span class="name">- 6.3k</span>
+            </div>
+            <p class="fs-12 text-gray-77d">(Trừ sau khi kết thúc chuyến đi)</p>
+        </div>
+        <!-- end bảng tính tiền -->
+
         <!-- thông tin tài xế -->
         <div class="info-driver mt-20">
-            <h2 class="title text-white fw-300 fs-27 lh-40 mb-20">Thông tin tài xế</h2>
+            <h2 class="title text-white fw-300 fs-27 lh-40 mb-20">Thông tin hành khách</h2>
             <div class="avatar">
                 <img src="./images/2.jpg" alt="">
             </div>
@@ -246,69 +276,95 @@
             </div>
             <!-- end contact -->
 
-            <!-- item -->
-            <div class="car-info d-flex bg-gray-0c1 py-10 px-15 -mx-15 mb-20">
-                <!-- img -->
-                <div class="artilce-img flex-0 w-35">
-                    <a href="#" class="image-wrapper">
-                        <img src="./images/3.jpg" alt="">
-                    </a>
-                </div>
-                <!-- end img -->
-                <!-- content -->
-                <div class="article-content flex-1 ml-15">
-                    <h3 class="title lh-24 fw-700 d-flex align-items-center">Volvo S90 - 2021</h3>
-                    <p class="bg-white text-black mt-4 px-4 d-inline">30H - 12345</p>
-                    <p class="fw-300 mt-4">Chia sẻ xăng xe: 500k</p>
-                </div>
-                <!-- end content -->
-            </div>
-            <!-- end item -->
-
             
         </div>
         <!-- end thông tin tài xế -->
-
-        <!-- QR code-->
-        <div  class="qr-code py-12 px-15 -mx-15 bg-white text-black">
-            <div class="d-flex">
-                <!-- img -->
-                <div class="qr-img flex-0">
-                    <img src="./images/QR.png" alt="">
-                </div>
-                <!-- end img -->
-                <!-- content -->
-                <div class="content flex-1 ml-12 position-relative">
-                    <span class="btn-copy position-absolute">
-                        <img src="./images/svg/copy.svg" alt="">
-                    </span>
-                    <h3 class="fw-700 lh-24">Techcombank</h3>
-                    <div class="mt-4 d-flex align-items-center">
-                        <p class="mr-20">117002777568</p>
-                        <span class="copied text-red-e84">Đã copy</span>
+        <div class="line my-20"></div>
+        <!-- đánh giá -->
+        <div class="evaluate-box">
+            <div class="heading d-flex align-items-center justify-content-between mb-20">
+                <h3 class="fw-700 lh-24">Đánh giá (99)</h3>
+                <div class="select-list">
+                    <div class="select-wrapper fs-14 lh-21 text-white">
+                        <select name="" id="" class="select-section">
+                          <option value="0">Mới nhất</option>
+                          <option value="1">Cũ nhất</option>
+                        </select>
                     </div>
-                    <p class="text-uppercase mt-4">nguyen van toan</p>
-                    <p class="mt-4">500.000đ - Chia sẻ xăng xe</p>
                 </div>
-                <!-- end content -->
             </div>
+            <!-- list -->
+            <div class="list">
+                <!-- item -->
+                <div class="item d-flex mb-24">
+                    <!-- img -->
+                    <div class="article-img flex-0">
+                        <a href="#">
+                            <img src="./images/4.jpg" alt="" class="avatar-user-img">
+                        </a>
+                    </div>
+                    <!-- end img -->
+                    <!-- content -->
+                    <div class="content flex-1 ml-10">
+                        <p class="lh-24">Vũ Văn An: trải nghiệm tuyệt vời chính là cách bạn thể hiện đánh giá cao nhà hàng và tài xế phục vụ bạn. Khi nhận được đánh giá tích cực của bạn</p>
+                        <div class="list-star mt-8 d-flex align-items-center">
+                            <div class="list-star d-flex align-items-center">
+                                <img src="./images/svg/star.svg" alt="" class="mr-4">
+                                <img src="./images/svg/star.svg" alt="" class="mr-4">
+                                <img src="./images/svg/star.svg" alt="" class="mr-4">
+                                <img src="./images/svg/star.svg" alt="" class="mr-4">
+                                <img src="./images/svg/star-boder.svg" alt="" class="mr-4">
+                            </div>
+                            <span class="text-gray-77d fs-14 lh-21 d-inline ml-20">5 ngày trước</span>
+                        </div>
+                    </div>
+                    <!-- end content -->
+                </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="item d-flex mb-24">
+                    <!-- img -->
+                    <div class="article-img flex-0">
+                        <a href="#">
+                            <img src="./images/4.jpg" alt="" class="avatar-user-img">
+                        </a>
+                    </div>
+                    <!-- end img -->
+                    <!-- content -->
+                    <div class="content flex-1 ml-10">
+                        <p class="lh-24">Vũ Văn An: trải nghiệm tuyệt vời chính là cách bạn thể hiện đánh giá cao nhà hàng và tài xế phục vụ bạn. Khi nhận được đánh giá tích cực của bạn</p>
+                        <div class="list-star mt-8 d-flex align-items-center">
+                            <div class="list-star d-flex align-items-center">
+                                <img src="./images/svg/star.svg" alt="" class="mr-4">
+                                <img src="./images/svg/star.svg" alt="" class="mr-4">
+                                <img src="./images/svg/star.svg" alt="" class="mr-4">
+                                <img src="./images/svg/star.svg" alt="" class="mr-4">
+                                <img src="./images/svg/star-boder.svg" alt="" class="mr-4">
+                            </div>
+                            <span class="text-gray-77d fs-14 lh-21 d-inline ml-20">5 ngày trước</span>
+                        </div>
+                    </div>
+                    <!-- end content -->
+                </div>
+                <!-- end item -->
+            </div>
+            <!-- end list -->
         </div>
-        <!-- end QR code -->
-
+        <!-- end đánh giá -->
         
     </main>
     <!-- end main -->
 
     <!-- footer -->
     <section class="block-footer block-footer--secondary px-15 py-12 d-flex align-items-center justify-content-between">
-        <button class="btn bg-red-84 fs-16 flex-0">
+        <button class="btn bg-cyan-2f fs-16 flex-0">
             <img src="./images/svg/power.svg" alt="">
         </button>
         <button class="btn bg-gray-161 fs-16 flex-1 position-relative">
             <div class="position-absolute triple-next-icon">
                 <img src="./images/svg/triple-next.svg" alt="">
             </div>
-            Kết thúc hành trình
+            Bắt đầu đi đón khách
         </button>
     </section>
     <!-- end footer -->

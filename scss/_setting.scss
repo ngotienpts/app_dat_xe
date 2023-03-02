@@ -7,3 +7,39 @@
     margin-left: 15px;
   }
 }
+.block-setting {
+  padding-top: 0;
+
+  & .setting-container {
+    & .item {
+      border-bottom: 1px solid #222b35;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:not(.active) .change-input {
+        display: none;
+      }
+      &.active .img {
+        transform: rotate(90deg);
+      }
+      & .img {
+        transition: transform 0.4s;
+      }
+    }
+    & .btn-save {
+      background-color: var(--cyan-2f);
+    }
+
+    & .invalid {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  & .logout {
+    padding: 0;
+    border-bottom: 1px solid var(--red--e84);
+    height: auto;
+  }
+}

@@ -1,0 +1,9 @@
+.find-customers {
+  & input {
+    background-color: transparent;
+    padding: 0;
+    &::placeholder {
+      color: var(--gray--77d);
+    }
+  }
+}

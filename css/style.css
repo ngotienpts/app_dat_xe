@@ -1675,4 +1675,49 @@ textarea::placeholder {
   margin-left: 15px;
 }
 
+.block-setting {
+  padding-top: 0;
+}
+.block-setting .setting-container .item {
+  border-bottom: 1px solid #222b35;
+}
+.block-setting .setting-container .item:first-child {
+  padding-top: 0;
+}
+.block-setting .setting-container .item:not(.active) .change-input {
+  display: none;
+}
+.block-setting .setting-container .item.active .img {
+  transform: rotate(90deg);
+}
+.block-setting .setting-container .item .img {
+  transition: transform 0.4s;
+}
+.block-setting .setting-container .btn-save {
+  background-color: var(--cyan-2f);
+}
+.block-setting .setting-container .invalid {
+  display: none;
+}
+.block-setting .setting-container .invalid.active {
+  display: block;
+}
+.block-setting .logout {
+  padding: 0;
+  border-bottom: 1px solid var(--red--e84);
+  height: auto;
+}
+
+.find-customers input {
+  background-color: transparent;
+  padding: 0;
+}
+.find-customers input::placeholder {
+  color: var(--gray--77d);
+}
+
+.referral-link {
+  margin-top: 32px;
+}
+
 /*# sourceMappingURL=style.css.map */
