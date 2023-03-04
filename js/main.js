@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // uploadfile
   var uploadFile = document.querySelector(".js--uploadFile");
 
+  // clipboard
+  var clipboard = document.querySelector(".js--clipboard-filed");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -174,6 +177,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         input.onchange = function () {
           readURL(this);
+        };
+      }
+
+      // clipboard
+      if (clipboard) {
+        var imgCopy = clipboard.querySelector(".js--clipboard-img");
+        var text = clipboard.querySelector(".js--clipboard-text");
+        var tooltip = clipboard.querySelector(".js--tooltip");
+        imgCopy.onclick = function () {
+          tooltip.classList.add("active");
+          navigator.clipboard.writeText(text.innerText);
         };
       }
     },

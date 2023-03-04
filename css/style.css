@@ -384,6 +384,10 @@ img {
   color: var(--gray--77d);
 }
 
+.text-cyan-f2 {
+  color: var(--cyan-2f);
+}
+
 .bg-white {
   background-color: var(--white);
 }
@@ -1718,6 +1722,9 @@ textarea::placeholder {
 
 .referral-link {
   margin-top: 32px;
+}
+.referral-link .tolltip:not(.active) {
+  display: none;
 }
 
 .upload-file {

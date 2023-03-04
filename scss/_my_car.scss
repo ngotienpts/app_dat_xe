@@ -1,5 +1,9 @@
 .referral-link {
   margin-top: 32px;
+
+  & .tolltip:not(.active) {
+    display: none;
+  }
 }
 .upload-file {
   position: relative;
