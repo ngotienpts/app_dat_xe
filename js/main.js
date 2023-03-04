@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // setting
   var settingItems = document.querySelectorAll(".js_setting_item");
 
+  // uploadfile
+  var uploadFile = document.querySelector(".js--uploadFile");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -108,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
             finalPoint
           );
           var count = Math.floor(spaceBetween / 9);
-
           for (var i = 0; i < count; i++) {
             dots.appendChild(document.createElement("span"));
           }
@@ -149,6 +151,30 @@ document.addEventListener("DOMContentLoaded", function () {
             }
           };
         });
+      }
+      // upload file avatar
+      if (uploadFile) {
+        var w = uploadFile.clientWidth;
+        var h = Math.floor(w / 1.98);
+        uploadFile.style.height = h + "px";
+        var imgPreview = uploadFile.querySelector(".js--image-preview");
+        var input = uploadFile.querySelector(".image-upload");
+        getImg = imgPreview.querySelector("img");
+
+        function readURL(input) {
+          if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+              getImg.setAttribute("src", e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+          }
+        }
+
+        input.onchange = function () {
+          readURL(this);
+        };
       }
     },
     //
