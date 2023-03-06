@@ -74,18 +74,24 @@
           <div class="icon mr-10 flex-0">
             <img src="./images/svg/current-position.svg" alt="">
           </div>
-          <div class="content flex-1">
+          <div class="content flex-1 position-relative">
               <h3 class="title fw-700 lh-19">Vị trí hiện tại</h3>
               <p class="des fs-15 text-gray-77d">286 Nguyễn Xiển, Thanh Trì, Hà Nội</p>
+              <div class="map position-absolute">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d59597.42262744548!2d105.78172543715795!3d20.99909335118169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d20.9990168!2d105.81674489999999!4m0!5e0!3m2!1svi!2s!4v1678076107705!5m2!1svi!2s" width='100%' height='300' style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
           </div>
         </li>
         <li class="destination-item d-flex">
           <div class="icon mr-10 flex-0">
             <img src="./images/svg/location.svg" alt="">
           </div>
-          <div class="content flex-1">
+          <div class="content flex-1 position-relative">
             <h3 class="title fw-700 lh-19">Cảng hàng không quốc tế Nội Bài</h3>
             <p class="des fs-15 text-gray-77d">Phú Minh, Sóc Sơn, Hà Nội</p>
+            <div class="map position-absolute">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d59597.42262744548!2d105.78172543715795!3d20.99909335118169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d20.9990168!2d105.81674489999999!4m0!5e0!3m2!1svi!2s!4v1678076107705!5m2!1svi!2s" width='100%' height='300' style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </li>
       </ul>
@@ -105,7 +111,7 @@
                       <li class="mt-4">Xe sedan</li>
                     </ul>
                     <ul class="select-option js_select text-white position-absolute -mx-15">
-                      <li class="option">
+                      <li class="option active">
                         <h4 class="title fs-15 lh-19 fw-700">Xe sedan</h4>
                         <p class="sapo mt-12 fs-15 lh-19">Yêu cầu sedan hạng B trở lên, xe sạch sẽ, tài xế lịch sự</p>
                       </li>
@@ -133,22 +139,49 @@
                     <ul class="default-option js_default-option">
                       <li class="mt-4">30 phút nữa</li>
                     </ul>
+                    
                     <ul class="select-option select-option--secondary js_select text-white position-absolute -mx-15 text-center">
-                      <li class="option-secondary mb-20">
+                      <li class="option-secondary mb-20 d-flex align-items-center justify-content-center">
                         <span class="fs-15">Sau khoảng</span>
-                        <span class="fs-23">&nbsp;&nbsp;00&nbsp;&nbsp;</span>
+                        <div class="h-38 w-35px mx-8">
+                          <input type="number" name="hour" class="bg-gray-0c1 fs-23" placeholder="00" maxlength="2" >
+                        </div>
                         <span class="fs-15">giờ</span>
-                        <span class="fs-23">&nbsp;&nbsp;30&nbsp;&nbsp;</span>
+                        <div class="h-38 w-35px mx-8">
+                          <input type="number" name="minute" class="bg-gray-0c1 fs-23" placeholder="30" maxlength="2" >
+                        </div>
                         <span class="fs-15">phút nữa</span>
                       </li>
+                      
                       <li class="divider fs-11 mb-20">
                         <span>hoặc</span>
                       </li>
                       <li class="option-secondary mb-20">
-                        <h4><span class="fs-15">Ngày:</span><span class="fs-23"> 20/02/2023</span></h4>
-                        <h4><span class="fs-15">Giờ:</span> <span class="fs-23">14:00</span></h4>
+                        <div class=" d-flex align-items-center justify-content-center mb-15">
+                          <span class="fs-15">Ngày:</span>
+                          <div class="h-38 w-35px mx-8">
+                            <input type="number" name="day" class="bg-gray-0c1 fs-23" placeholder="20" maxlength="2" >
+                          </div>
+                          <span>/</span>
+                          <div class="h-38 w-35px mx-8">
+                            <input type="number" name="month" class="bg-gray-0c1 fs-23" placeholder="02" maxlength="2">
+                          </div>
+                          <span>/</span>
+                          <div class="h-38 w-61px mx-8">
+                            <input type="number" name="year" class="bg-gray-0c1 fs-23" placeholder="2023" maxlength="4">
+                          </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-center">
+                          <span class="fs-15">Giờ:</span>
+                          <div class="h-38 w-35px mx-8">
+                            <input type="number" name="day" class="bg-gray-0c1 fs-23" placeholder="14" maxlength="2">
+                          </div>
+                          <span>:</span>
+                          <div class="h-38 w-35px mx-8">
+                            <input type="number" name="month" class="bg-gray-0c1 fs-23" placeholder="00" maxlength="2">
+                          </div>
+                        </div>
                       </li>
-                      
                     </ul>
                   </div>
                 </div>

@@ -1,0 +1,11 @@
+.money-table {
+  & .price {
+    max-width: 108px;
+    border: 1px solid var(--cyan-2f);
+    overflow: hidden;
+
+    & input {
+      text-align: end;
+    }
+  }
+}

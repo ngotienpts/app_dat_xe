@@ -81,7 +81,17 @@
 
       <!-- setting -->
       <div class="setting">
-        <img src="./images/svg/setting.svg" alt="" class="img-setting mx-auto my-24">
+        <div class="text-center">
+          <div class="setting-avatar position-relative d-inline">
+            <img src="./images/user.png" alt="" class="img-setting mx-auto my-24">
+            <div class="setting-edit-avatar">
+              <input type="file" id="imageEdit" accept=".png, .jpg, .jpeg">
+              <label for="imageEdit">
+                <img src="./images/svg/edit.svg" alt="" class="label-img">
+              </label>
+            </div>
+          </div>
+        </div>
         <div class="setting-container -mx-15">
           <!-- item -->
           <div class="item py-12 px-15 js_setting_item">
@@ -125,7 +135,10 @@
               </div>
             </div>
             <div class="change-input js_setting_changeText my-10 d-flex align-items-center justify-content-between">
-              <input type="text" class="h-32 flex-1 w-100 bg-gray-0c1 border-10 py-4 px-12" maxlength="25">
+              <select name="" id="" class="h-32 flex-1 w-100 bg-gray-0c1 border-10 py-4 px-12"> 
+                <option value="0">Nam</option>
+                <option value="1">Nữ</option>
+              </select>
               <button class="btn-save ml-12 flex-0 btn py-4 px-12 h-32 border-10">Lưu</button>
             </div>
             <span class="invalid text-red-e84 fs-12">Nội dung không được để trống!</span>
@@ -141,7 +154,10 @@
               </div>
             </div>
             <div class="change-input js_setting_changeText my-10 d-flex align-items-center justify-content-between">
-              <input type="text" class="h-32 flex-1 w-100 bg-gray-0c1 border-10 py-4 px-12" maxlength="25">
+              <select name="" id="" class="h-32 flex-1 w-100 bg-gray-0c1 border-10 py-4 px-12"> 
+                <option value="0">Chưa</option>
+                <option value="1">Có</option>
+              </select>
               <button class="btn-save ml-12 flex-0 btn py-4 px-12 h-32 border-10">Lưu</button>
             </div>
             <span class="invalid text-red-e84 fs-12">Nội dung không được để trống!</span>

@@ -21,13 +21,31 @@ document.addEventListener("DOMContentLoaded", function () {
   // uploadfile
   var uploadFile = document.querySelector(".js--uploadFile");
 
+  var editSetting = document.querySelector(".setting-avatar");
+
   // clipboard
   var clipboard = document.querySelector(".js--clipboard-filed");
+
+  //
+  var typeNumberAll = document.querySelectorAll('input[type="number"]');
+
+  // destination-list
+  var destinations = document.querySelectorAll(".destination-list");
 
   const app = {
     // su ly cac su kien
     handleEvent: function () {
       const _this = this;
+      // number of input type with max-length
+      if (typeNumberAll) {
+        typeNumberAll.forEach((typeNumber) => {
+          typeNumber.oninput = function () {
+            if (this.value.length > this.maxLength)
+              this.value = this.value.slice(0, this.maxLength);
+          };
+        });
+      }
+
       // đánh sao
       if (starRating) {
         var stars = starRating.querySelectorAll('[type*="radio"]');
@@ -50,6 +68,10 @@ document.addEventListener("DOMContentLoaded", function () {
             selectDefault.parentElement.querySelectorAll(".js_select .option");
           options.forEach((option) => {
             option.onclick = function () {
+              document
+                .querySelector(".option.active")
+                .classList.remove("active");
+              this.classList.add("active");
               var h4 = this.querySelector(".title");
               var currentEl = selectDefault.querySelector("li");
               currentEl.innerText = h4.innerText;
@@ -57,20 +79,12 @@ document.addEventListener("DOMContentLoaded", function () {
             };
           });
 
-          var optionSecondarys = selectDefault.parentElement.querySelectorAll(
-            ".js_select .option-secondary"
-          );
-          optionSecondarys.forEach((optionSecondary) => {
-            optionSecondary.onclick = function () {
-              var currentEl = selectDefault.querySelector("li");
-              currentEl.innerHTML = this.innerHTML;
-              selectDefault.classList.remove("active");
-            };
-          });
-
           // hide cac element khi click ra ngoai
           document.addEventListener("click", function (e) {
-            if (!selectDefault.querySelector("li").contains(e.target)) {
+            if (
+              !selectDefault.querySelector("li").contains(e.target) &&
+              !e.target.closest(".js_select")
+            ) {
               selectDefault.classList.remove("active");
             }
           });
@@ -134,28 +148,39 @@ document.addEventListener("DOMContentLoaded", function () {
           var name = settingItem.querySelector(".name");
           var valid = settingItem.querySelector(".name.valid");
           var input = settingItem.querySelector(".js_setting_changeText input");
+          var selected = settingItem.querySelector("select");
+
           var btnSave = settingItem.querySelector(".btn-save");
           var invalid = settingItem.querySelector(".invalid");
           title.onclick = function () {
             this.parentElement.classList.toggle("active");
-            input.focus();
-            if (input.value === "") {
-              input.value = name.innerText;
+            if (input != null) {
+              input.focus();
+              if (input.value === "") {
+                input.value = name.innerText;
+              }
             }
           };
 
           btnSave.onclick = function () {
-            if (input.value == "" && !valid) {
-              invalid.classList.add("active");
-            } else {
-              name.innerText = input.value;
+            if (input != null) {
+              if (input.value == "" && !valid) {
+                invalid.classList.add("active");
+              } else {
+                name.innerText = input.value;
+                settingItem.classList.remove("active");
+                invalid.classList.remove("active");
+              }
+            }
+
+            if (selected != null) {
+              name.innerText = selected.options[selected.selectedIndex].text;
               settingItem.classList.remove("active");
-              invalid.classList.remove("active");
             }
           };
         });
       }
-      // upload file avatar
+      // upload file avatar my car
       if (uploadFile) {
         var w = uploadFile.clientWidth;
         var h = Math.floor(w / 1.98);
@@ -179,6 +204,26 @@ document.addEventListener("DOMContentLoaded", function () {
           readURL(this);
         };
       }
+      // upload file avatar
+      if (editSetting) {
+        var imgPreviewAvatar = editSetting.querySelector(".img-setting");
+        var inputSetting = editSetting.querySelector("#imageEdit");
+
+        function readURL(inputSetting) {
+          if (inputSetting.files && inputSetting.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+              imgPreviewAvatar.setAttribute("src", e.target.result);
+            };
+
+            reader.readAsDataURL(inputSetting.files[0]);
+          }
+        }
+
+        inputSetting.onchange = function () {
+          readURL(this);
+        };
+      }
 
       // clipboard
       if (clipboard) {
@@ -189,6 +234,29 @@ document.addEventListener("DOMContentLoaded", function () {
           tooltip.classList.add("active");
           navigator.clipboard.writeText(text.innerText);
         };
+      }
+
+      // destinations
+      if (destinations) {
+        destinations.forEach((destination) => {
+          var desList = destination.querySelectorAll(".des");
+          desList.forEach((des) => {
+            var map = des.nextElementSibling;
+            if (map != null) {
+              des.onclick = function () {
+                map.classList.toggle("active");
+              };
+            }
+            // hide cac element khi click ra ngoai
+            document.addEventListener("click", function (e) {
+              if (!des.contains(e.target) && !e.target.closest(".map")) {
+                if (map != null) {
+                  map.classList.remove("active");
+                }
+              }
+            });
+          });
+        });
       }
     },
     //
