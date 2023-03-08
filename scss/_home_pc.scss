@@ -1,0 +1,261 @@
+.header-pc {
+  & .container {
+    height: 70px;
+  }
+}
+.header-pc__center {
+  .img {
+    width: 98px;
+  }
+}
+.box-primary {
+  overflow: hidden;
+  background-image: url("../images/bg_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .container {
+    // position: absolute;
+    // top: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
+    padding: 10px 0;
+  }
+  & .heading {
+    line-height: 62px;
+  }
+  & .form-search {
+    margin-top: 32px;
+    margin-bottom: 22px;
+    background-color: #f6f6f6;
+
+    & .input {
+      background: transparent;
+      padding: 14px 46px 14px 26px;
+
+      &::placeholder {
+        font-size: 16px;
+        color: var(--black);
+      }
+    }
+
+    & .btn-search {
+      right: 0;
+      background-color: transparent;
+      padding: 0 15px;
+      height: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  & .destination-list {
+    & .content {
+      margin-bottom: 24px;
+    }
+
+    & .des {
+      margin-top: 5px;
+    }
+  }
+}
+.panel-border {
+  border: 1px solid #000;
+}
+
+.box-secondary {
+  padding: 90px 0;
+  & .artilce-img {
+    width: 46%;
+  }
+  & .article-content {
+    margin-left: 38px;
+    margin-top: -4px;
+  }
+}
+.box-third {
+  overflow: hidden;
+  background-image: url("../images/bg_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  & .container {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    padding: 68px 0;
+  }
+}
+.box-fourth {
+  padding: 102px 0;
+}
+
+.box-fifth {
+  padding: 47px 0 109px;
+  & .title {
+    margin-bottom: 95px;
+  }
+  & .item {
+    margin-bottom: 63px;
+  }
+  & .number {
+    width: 55px;
+    height: 55px;
+  }
+  & .text {
+    margin-top: -8px;
+    margin-left: 54px;
+    & .text-1 {
+      font-size: 36px;
+      line-height: 46px;
+      margin-bottom: 18px;
+    }
+  }
+}
+.footer-pc {
+  & .container {
+    padding: 34px 0;
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
+  }
+  & .list {
+    & .item {
+      font-size: 16px;
+      display: inline;
+      + .item::before {
+        padding: 8px;
+        color: var(--white);
+        content: "\2758";
+      }
+    }
+  }
+}
+
+/*-------------------------------------------------------------------responsive*/
+@media (max-width: 64em) {
+  .box-primary .container,
+  .box-secondary .container,
+  .box-fifth .container {
+    display: block;
+  }
+
+  .box-primary .right {
+    display: none;
+  }
+  .box-primary .container {
+    padding-top: 0;
+  }
+  .box-primary .heading,
+  .box-secondary .title,
+  .box-third .title,
+  .box-fourth .title,
+  .box-fifth .title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .box-primary .left {
+    padding: 15px;
+  }
+  .header-pc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-pc {
+    & .header-pc__left,
+    & .header-pc__right {
+      gap: 10px;
+      font-size: 14px;
+    }
+  }
+  .header-pc__center .img {
+    width: 70px;
+  }
+  .box-secondary {
+    padding: 15px;
+
+    & .artilce-img {
+      width: 100%;
+    }
+
+    & .article-content {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+
+  .box-third {
+    & .container {
+      padding: 48px 15px;
+    }
+  }
+
+  .box-third {
+    & button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+
+  .box-fourth {
+    padding: 48px 15px;
+
+    & .title {
+      margin-bottom: 0;
+    }
+
+    & img {
+      width: 120px;
+    }
+  }
+
+  .box-fifth {
+    padding: 40px 15px;
+
+    & .title {
+      margin-bottom: 48px;
+    }
+
+    & .item {
+      margin-bottom: 32px;
+
+      & .text {
+        margin-left: 24px;
+        & .text-1 {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 12px;
+        }
+      }
+    }
+    & .number {
+      width: 40px;
+      height: 40px;
+      font-size: 28px;
+    }
+
+    & .right {
+      img {
+        margin: auto;
+      }
+    }
+  }
+
+  .footer-pc {
+    .container {
+      display: block;
+      text-align: center;
+    }
+    .list {
+      justify-content: center;
+      margin-top: 24px;
+      .item {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+}

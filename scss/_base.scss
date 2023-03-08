@@ -74,7 +74,7 @@ a:hover,
 a:active,
 a:focus {
   outline: 0;
-  color: var(--white);
+  color: inherit;
 }
 img {
   display: block;
@@ -91,8 +91,15 @@ img {
 .w-61px {
   width: 3.8125rem;
 }
+.w-190 {
+  width: 11.875rem;
+}
 .w-250 {
   width: 15.625rem;
+}
+.w-1200 {
+  max-width: 75rem;
+  margin: auto;
 }
 .w-35 {
   width: 35%;
@@ -189,6 +196,10 @@ img {
   outline: none;
 }
 /*=================================================================*/
+.font-primary {
+  font-family: "Lato", sans-serif;
+}
+/*=================================================================*/
 .fill-black {
   fill: var(--black);
 }
@@ -219,6 +230,9 @@ img {
 
 .bg-white {
   background-color: var(--white);
+}
+.bg-black {
+  background-color: var(--black);
 }
 .bg-cyan-2f {
   background-color: var(--cyan-2f);
@@ -713,6 +727,9 @@ img {
 .lh-48 {
   line-height: 3rem;
 }
+.lh-62 {
+  line-height: 3.875rem;
+}
 
 /*=================================================================*/
 .position-relative {
@@ -779,6 +796,9 @@ img {
   grid-template-columns: repeat(4, 1fr);
 }
 /*=================================================================*/
+.gap-10 {
+  grid-gap: 0.625rem;
+}
 .gap-16 {
   grid-gap: 1rem;
 }
