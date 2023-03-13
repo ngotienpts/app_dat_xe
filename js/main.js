@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // destination-list
   var destinations = document.querySelectorAll(".destination-list");
 
+  // map picker
+  var mapPiker = document.querySelector(".map-picker");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -257,6 +260,27 @@ document.addEventListener("DOMContentLoaded", function () {
             });
           });
         });
+      }
+
+      // map picker
+      if (mapPiker) {
+        var mapInput = mapPiker.querySelector(".map-picker-input");
+        var mapIconSearch = mapPiker.querySelector(".map-picker-icon-search");
+        var mapIconClose = mapPiker.querySelector(".map-picker-icon-close");
+        var mapResult = mapPiker.querySelector(".map-picker-result");
+        mapIconClose.onclick = function () {
+          mapInput.value = "";
+          if (mapResult.classList.contains("active")) {
+            mapResult.classList.remove("active");
+          }
+        };
+        mapInput.oninput = function (e) {
+          if (e.target.value !== "") {
+            mapResult.classList.add("active");
+          } else {
+            mapResult.classList.remove("active");
+          }
+        };
       }
     },
     //

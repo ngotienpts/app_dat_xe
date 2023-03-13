@@ -100,13 +100,63 @@
             <!-- end item -->
             
             <!-- item -->
-            <li class="destination-item d-flex">
+            <li class="destination-item d-flex position-relative">
                 <div class="icon mr-10 flex-0">
                     <img src="./images/svg/time.svg" alt="">
                 </div>
                 <div class="content flex-1">
                     <h3 class="title fw-700 lh-19">Thời gian khởi hành</h3>
-                    <p class="des fs-15 text-gray-77d">Ngay bây giờ</p>
+                    <div class="select-list">
+                        <div class="select-wrapper fs-15 text-gray-77d">
+                            <ul class="default-option js_default-option">
+                              <li class="mt-4">30 phút nữa</li>
+                            </ul>
+                            
+                            <ul class="select-option select-option--secondary js_select text-white position-absolute -mx-15 text-center">
+                              <li class="option-secondary mb-20 d-flex align-items-center justify-content-center">
+                                <span class="fs-15">Sau khoảng</span>
+                                <div class="h-38 w-35px mx-8">
+                                  <input type="number" name="hour" class="bg-gray-0c1 fs-23" placeholder="00" maxlength="2" >
+                                </div>
+                                <span class="fs-15">giờ</span>
+                                <div class="h-38 w-35px mx-8">
+                                  <input type="number" name="minute" class="bg-gray-0c1 fs-23" placeholder="30" maxlength="2" >
+                                </div>
+                                <span class="fs-15">phút nữa</span>
+                              </li>
+                              
+                              <li class="divider fs-11 mb-20">
+                                <span>hoặc</span>
+                              </li>
+                              <li class="option-secondary mb-20">
+                                <div class=" d-flex align-items-center justify-content-center mb-15">
+                                  <span class="fs-15">Ngày:</span>
+                                  <div class="h-38 w-35px mx-8">
+                                    <input type="number" name="day" class="bg-gray-0c1 fs-23" placeholder="20" maxlength="2" >
+                                  </div>
+                                  <span>/</span>
+                                  <div class="h-38 w-35px mx-8">
+                                    <input type="number" name="month" class="bg-gray-0c1 fs-23" placeholder="02" maxlength="2">
+                                  </div>
+                                  <span>/</span>
+                                  <div class="h-38 w-61px mx-8">
+                                    <input type="number" name="year" class="bg-gray-0c1 fs-23" placeholder="2023" maxlength="4">
+                                  </div>
+                                </div>
+                                <div class=" d-flex align-items-center justify-content-center">
+                                  <span class="fs-15">Giờ:</span>
+                                  <div class="h-38 w-35px mx-8">
+                                    <input type="number" name="day" class="bg-gray-0c1 fs-23" placeholder="14" maxlength="2">
+                                  </div>
+                                  <span>:</span>
+                                  <div class="h-38 w-35px mx-8">
+                                    <input type="number" name="month" class="bg-gray-0c1 fs-23" placeholder="00" maxlength="2">
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
                 </div>
             </li>
             <!-- end item -->

@@ -133,6 +133,11 @@ html ::-webkit-scrollbar {
   // height: 2.5rem;
   padding: 0 15px 20px 15px;
 }
+
+.block-footer--map {
+  background-color: transparent;
+  padding: 0 15px 20px 15px;
+}
 .icon-white {
   &::before {
     color: var(--white);

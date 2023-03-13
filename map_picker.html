@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon//apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon//apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon//apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon//apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon//apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon//apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon//apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon//apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon//manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- end favicon -->
+  <title>A2b</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+</head>
+
+<body>
+    <div class="map-picker block-main position-relative">
+        <img src="./images/map.png" alt="" class="map-picker__img">
+        <div class="map-picker__search">
+            <form action="">
+                <div class="form-search position-relative">
+                    <input type="text" placeholder="Tìm kiếm..." class="map-picker-input input w-100 fs-16">
+                    <button class="map-picker-icon-search active btn btn-search position-absolute">
+                      <img src="./images/svg/search.svg" alt="">
+                    </button>
+                    <div class="map-picker-icon-close btn btn-search position-absolute">
+                      <img src="./images/svg/close.svg" alt="">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="map-picker-result p-15">
+            <ul class="destination-list custom-scroll-100">
+                <li class="destination-item d-flex">
+                  <div class="icon mr-10">
+                    <img src="./images/svg/location.svg" alt="">
+                  </div>
+                  <div class="content">
+                    <h3 class="title fw-700 lh-19">Nhà riêng</h3>
+                    <p class="des fs-15 text-gray-77d">286 Nguyễn Xiển, Thanh Trì, Hà Nội</p>
+                    
+                  </div>
+                </li>
+                <li class="destination-item d-flex">
+                  <div class="icon mr-10">
+                    <img src="./images/svg/location.svg" alt="">
+                  </div>
+                  <div class="content">
+                    <h3 class="title fw-700 lh-19">Khu đo thị Royal City</h3>
+                    <p class="des fs-15 text-gray-77d">72 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                  </div>
+                </li>
+                <li class="destination-item d-flex">
+                  <div class="icon mr-10">
+                    <img src="./images/svg/location.svg" alt="">
+                  </div>
+                  <div class="content">
+                    <h3 class="title fw-700 lh-19">Cảng hàng không quốc tế Nội Bài</h3>
+                    <p class="des fs-15 text-gray-77d">Phú Minh, Sóc Sơn, Hà Nội</p>
+                  </div>
+                </li>
+              </ul>
+        </div>
+    </div>
+    <!-- footer -->
+    <section class="block-footer block-footer--map px-15 py-12 d-flex align-items-center justify-content-center">
+        <button class="btn success-back-home bg-red-84 h-40 w-100 d-flex align-items-center justify-content-center fs-16">OK</button>
+    </section>
+    <!-- end footer -->
+  
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
