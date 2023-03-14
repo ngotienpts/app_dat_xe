@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var settingItems = document.querySelectorAll(".js_setting_item");
 
   // uploadfile
-  var uploadFile = document.querySelector(".js--uploadFile");
+  var uploadFiles = document.querySelectorAll(".js--uploadFile");
 
   var editSetting = document.querySelector(".setting-avatar");
 
@@ -35,8 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // map picker
   var mapPiker = document.querySelector(".map-picker");
 
-  // hummner
+  // hammner
   var clawPrimarys = document.querySelectorAll(".btn-claw-primary");
+  var clawSecondary = document.querySelector(".driver-comming-wrapper");
 
   const app = {
     // su ly cac su kien
@@ -187,28 +188,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
       // upload file avatar my car
-      if (uploadFile) {
-        var w = uploadFile.clientWidth;
-        var h = Math.floor(w / 1.98);
-        uploadFile.style.height = h + "px";
-        var imgPreview = uploadFile.querySelector(".js--image-preview");
-        var input = uploadFile.querySelector(".image-upload");
-        getImg = imgPreview.querySelector("img");
+      if (uploadFiles) {
+        uploadFiles.forEach((uploadFile) => {
+          let w = uploadFile.clientWidth;
+          let h = Math.floor(w / 1.98);
+          uploadFile.style.height = h + "px";
+          let imgPreview = uploadFile.querySelector(".js--image-preview");
+          let input = uploadFile.querySelector(".image-upload");
+          let getImg = imgPreview.querySelector("img");
 
-        function readURL(input) {
-          if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function (e) {
-              getImg.setAttribute("src", e.target.result);
-            };
-
-            reader.readAsDataURL(input.files[0]);
+          function readURL(input) {
+            if (input.files && input.files[0]) {
+              let reader = new FileReader();
+              reader.onload = function (e) {
+                getImg.setAttribute("src", e.target.result);
+              };
+              reader.readAsDataURL(input.files[0]);
+            }
           }
-        }
 
-        input.onchange = function () {
-          readURL(this);
-        };
+          input.onchange = function () {
+            readURL(this);
+          };
+        });
       }
       // upload file avatar
       if (editSetting) {
@@ -286,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
       }
 
-      // hummerjs
+      // hammerjs
       if (clawPrimarys) {
         clawPrimarys.forEach((clawPrimary) => {
           var clawIcon = clawPrimary.querySelector(".claw-primary__icon");
@@ -303,6 +305,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }
           });
         });
+      }
+
+      if (clawSecondary) {
+        var clawMap = clawSecondary.querySelector(".driver-comming-map");
+        var clawDrag = clawSecondary.querySelector(".driver-comming-drag");
+        clawDrag.onclick = function () {
+          clawMap.classList.toggle("hide");
+        };
       }
     },
     //

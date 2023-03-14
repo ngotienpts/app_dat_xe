@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon//apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon//apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon//apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon//apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon//apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon//apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon//apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon//apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon//manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- end favicon -->
+  <title>A2b</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+</head>
+
+<body>
+
+    <!-- main -->
+    <div class="driver-comming-wrapper">
+        <div class="driver-comming-map position-relative">
+            <img src="./images/map.png" alt="" class="driver-comming-img">
+            <div class="driver-comming-time d-flex align-items-center position-absolute">
+                <img src="./images/svg/time.svg" alt="" class="mr-4">
+                14 phút
+            </div>
+        </div>
+        <div class="driver-comming-drag">
+            <span></span>
+        </div>
+    </div>
+    <section class="block-main block-driver-comming px-15 custom-scroll-100">
+        <!-- thông tin tài xế -->
+        <div class="info-driver">
+            <!-- <h2 class="title text-white fw-300 fs-27 lh-40 mb-20">Thông tin tài xế</h2> -->
+            <div class="avatar">
+                <img src="./images/2.jpg" alt="">
+            </div>
+            <div class="my-15">
+                <h3 class="title lh-24 fw-700 d-flex align-items-center justify-content-center">
+                    Nguyễn Văn Toàn 
+                    <img src="./images/svg/security.svg" class="ml-10" alt="">
+                </h3>
+                <div class="evaluate d-flex align-items-center mr-24 justify-content-center">
+                    <img src="./images/svg/star.svg" class="mr-4" alt="">
+                    5.0
+                </div>
+            </div>
+
+            <!-- contact -->
+            <div class="contact-driver d-flex align-items-center justify-content-center mb-24">
+                <!-- call -->
+                <a href="tel:+8412345678" class="item bg-cyan-2f d-flex align-items-center h-40 py-8 px-12">
+                    <img src="./images/svg/phone.svg" class="mr-8" alt="">
+                    Gọi
+                </a>
+                <!-- end call -->
+                <!-- facebook -->
+                <a href="#" class="item bg-blue-237 d-flex align-items-center h-40 py-8 px-12">
+                    <img src="./images/svg/message.svg" class="mr-8" alt="">
+                    Facebook
+                </a>
+                <!-- end facebook -->
+                <!-- zalo -->
+                <a href="#" class="item bg-blue-009 d-flex align-items-center h-40 py-8 px-12">
+                    
+                    <img src="./images/svg/zalo.svg" class="mr-8" alt="">
+    
+                    Zalo
+                </a>
+                <!-- end zalo -->
+            </div>
+            <!-- end contact -->
+
+            <!-- item -->
+            <div class="car-info d-flex bg-gray-0c1 py-10 px-15 -mx-15 mb-20">
+                <!-- img -->
+                <div class="artilce-img flex-0 w-35">
+                    <a href="#" class="image-wrapper">
+                        <img src="./images/3.jpg" alt="">
+                    </a>
+                </div>
+                <!-- end img -->
+                <!-- content -->
+                <div class="article-content flex-1 ml-15">
+                    <h3 class="title lh-24 fw-700 d-flex align-items-center">Volvo S90 - 2021</h3>
+                    <p class="bg-white text-black mt-4 px-4 d-inline">30H - 12345</p>
+                    <p class="fw-300 mt-4">Chia sẻ xăng xe: 500k</p>
+                </div>
+                <!-- end content -->
+            </div>
+            <!-- end item -->
+
+            
+        </div>
+        <!-- end thông tin tài xế -->
+        <div class="line my-20"></div>
+        <!--  -->
+        <div class="">
+            <h2 class="title text-white fw-300 fs-27 lh-40 d-flex align-items-center justify-content-between">Thông tin chuyến đi <span class="fs-13 text-gray-77d">#2554212</span></h2>
+            <ul class="destination-list">
+              <li class="destination-item d-flex">
+                <div class="icon mr-10 flex-0">
+                  <img src="./images/svg/current-position.svg" alt="">
+                </div>
+                <div class="content flex-1 position-relative">
+                    <h3 class="title fw-700 lh-19">Vị trí hiện tại</h3>
+                    <p class="des fs-15 text-gray-77d">286 Nguyễn Xiển, Thanh Trì, Hà Nội</p>
+                    <div class="map position-absolute">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d59597.42262744548!2d105.78172543715795!3d20.99909335118169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d20.9990168!2d105.81674489999999!4m0!5e0!3m2!1svi!2s!4v1678076107705!5m2!1svi!2s" width='100%' height='300' style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+              </li>
+              <li class="destination-item d-flex">
+                <div class="icon mr-10 flex-0">
+                  <img src="./images/svg/location.svg" alt="">
+                </div>
+                <div class="content flex-1 position-relative">
+                  <h3 class="title fw-700 lh-19">Cảng hàng không quốc tế Nội Bài</h3>
+                  <p class="des fs-15 text-gray-77d">Phú Minh, Sóc Sơn, Hà Nội</p>
+                  <div class="map position-absolute">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d59597.42262744548!2d105.78172543715795!3d20.99909335118169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d20.9990168!2d105.81674489999999!4m0!5e0!3m2!1svi!2s!4v1678076107705!5m2!1svi!2s" width='100%' height='300' style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="js_show-select">
+                <div class="see-details d-flex align-items-center justify-content-center mb-20 ">
+                    <img src="./images/svg/down.svg" alt="" class="mr-10">
+                    Xem chi tiết
+                </div>
+                <div class="hide-select">
+                <div class="form-group-select">
+                    <form action="">
+                    <div class="select-list mt-20">
+                        <!-- item -->
+                        <div class="select-item d-flex position-relative">
+                            <div class="icon mr-10 flex-0">
+                                <img src="./images/svg/car-secondary.svg" alt="">
+                            </div>
+                            <div class="content flex-1">
+                            <h3 class="title fw-700 lh-19">Loại hình xe</h3>
+                            <div class="select-wrapper fs-15 text-gray-77d">
+                                <ul class="default-option js_default-option">
+                                <li class="mt-4">Xe sedan</li>
+                                </ul>
+                                <ul class="select-option js_select text-white position-absolute -mx-15">
+                                <li class="option active">
+                                    <h4 class="title fs-15 lh-19 fw-700">Xe sedan</h4>
+                                    <p class="sapo mt-12 fs-15 lh-19">Yêu cầu sedan hạng B trở lên, xe sạch sẽ, tài xế lịch sự</p>
+                                </li>
+                                <li class="option">
+                                    <h4 class="title fs-15 lh-19 fw-700">Xe SUV</h4>
+                                    <p class="sapo mt-12 fs-15 lh-19">Yêu cầu 7 chỗ rộng rãi</p>
+                                </li>
+                                <li class="option">
+                                    <h4 class="title fs-15 lh-19 fw-700">Xe khách</h4>
+                                    <p class="sapo mt-12 fs-15 lh-19">Xe 16 chỗ đi tỉnh</p>
+                                </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <!-- item -->
+                        <div class="select-item d-flex position-relative">
+                            <div class="icon mr-10 flex-0">
+                            <img src="./images/svg/time.svg" alt="">
+                            </div>
+                            <div class="content flex-1">
+                            <h3 class="title fw-700 lh-19">Thời gian khởi hành</h3>
+                            <div class="select-wrapper fs-15 text-gray-77d">
+                                <ul class="default-option js_default-option">
+                                <li class="mt-4">30 phút nữa</li>
+                                </ul>
+                                
+                                <ul class="select-option select-option--secondary js_select text-white position-absolute -mx-15 text-center">
+                                <li class="option-secondary mb-20 d-flex align-items-center justify-content-center">
+                                    <span class="fs-15">Sau khoảng</span>
+                                    <div class="h-38 w-35px mx-8">
+                                    <input type="number" name="hour" class="bg-gray-0c1 fs-23" placeholder="00" maxlength="2" >
+                                    </div>
+                                    <span class="fs-15">giờ</span>
+                                    <div class="h-38 w-35px mx-8">
+                                    <input type="number" name="minute" class="bg-gray-0c1 fs-23" placeholder="30" maxlength="2" >
+                                    </div>
+                                    <span class="fs-15">phút nữa</span>
+                                </li>
+                                
+                                <li class="divider fs-11 mb-20">
+                                    <span>hoặc</span>
+                                </li>
+                                <li class="option-secondary mb-20">
+                                    <div class=" d-flex align-items-center justify-content-center mb-15">
+                                    <span class="fs-15">Ngày:</span>
+                                    <div class="h-38 w-35px mx-8">
+                                        <input type="number" name="day" class="bg-gray-0c1 fs-23" placeholder="20" maxlength="2" >
+                                    </div>
+                                    <span>/</span>
+                                    <div class="h-38 w-35px mx-8">
+                                        <input type="number" name="month" class="bg-gray-0c1 fs-23" placeholder="02" maxlength="2">
+                                    </div>
+                                    <span>/</span>
+                                    <div class="h-38 w-61px mx-8">
+                                        <input type="number" name="year" class="bg-gray-0c1 fs-23" placeholder="2023" maxlength="4">
+                                    </div>
+                                    </div>
+                                    <div class=" d-flex align-items-center justify-content-center">
+                                    <span class="fs-15">Giờ:</span>
+                                    <div class="h-38 w-35px mx-8">
+                                        <input type="number" name="day" class="bg-gray-0c1 fs-23" placeholder="14" maxlength="2">
+                                    </div>
+                                    <span>:</span>
+                                    <div class="h-38 w-35px mx-8">
+                                        <input type="number" name="month" class="bg-gray-0c1 fs-23" placeholder="00" maxlength="2">
+                                    </div>
+                                    </div>
+                                </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <!-- item -->
+                        <div class="select-item">
+                        <div class="d-flex">
+                            <div class="icon mr-10 flex-0">
+                            <img src="./images/svg/note.svg" alt="">
+                            </div>
+                            <div class="content flex-1">
+                            <h3 class="title fw-700 lh-19">Ghi chú cho tài xế</h3>
+                            <div class="select-wrapper fs-15 text-gray-77d">
+                            </div>
+                            </div>
+                        </div>
+                        <div class=" fs-15 text-gray-77d">
+                            <textarea class="lh-19 mt-12" name="" id="" rows="5" placeholder="Mô tả hành lý hoặc những vấn đề chưa được liệt kê ở trên"></textarea>
+                        </div>
+                        </div>
+                        <!-- item -->
+                    </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main -->
+
+    <!-- footer -->
+    <section class="block-footer block-footer--third px-15 py-12 d-flex align-items-center justify-content-center">
+        <a href="#" class="success-back-home h-40 w-100 d-flex align-items-center justify-content-center">Trang chủ</a>
+    </section>
+    <!-- end footer -->
+  <script src="./lib/hammerjs/hammer.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

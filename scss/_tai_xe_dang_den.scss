@@ -1,0 +1,33 @@
+.driver-comming-map {
+  overflow: hidden;
+  transition: all 0.6s ease-out;
+  max-height: 600px;
+  .driver-comming-img {
+    width: 100%;
+    height: auto;
+  }
+  .driver-comming-time {
+    background-color: #1a73e8;
+    border-radius: 8px;
+    padding: 8px 9px;
+    top: 10px;
+    left: 10px;
+  }
+  &.hide {
+    max-height: 0;
+  }
+}
+.driver-comming-drag {
+  text-align: center;
+  span {
+    width: 40px;
+    height: 1px;
+    display: inline-block;
+    background-color: #fff;
+    margin: 25px 0;
+  }
+}
+.block-driver-comming {
+  margin-top: 0;
+  padding-top: 0;
+}
