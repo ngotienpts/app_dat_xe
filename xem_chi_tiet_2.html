@@ -392,9 +392,10 @@
 
     <!-- footer -->
     <section class="block-footer block-footer--secondary px-15 py-12 d-flex align-items-center justify-content-between">
-        <button class="btn bg-cyan-2f fs-16 flex-0">
-            <img src="./images/svg/power.svg" alt="">
-        </button>
+        <button class="btn-claw-primary btn bg-cyan-2f fs-16 flex-0 hide">
+          <span class="claw-primary__text">Start</span>
+          <img src="./images/svg/power.svg" alt="" class="claw-primary__icon">
+      </button>
         <button class="btn bg-gray-161 fs-16 flex-1 position-relative">
             <div class="position-absolute triple-next-icon">
                 <img src="./images/svg/triple-next.svg" alt="">
@@ -403,7 +404,7 @@
         </button>
     </section>
     <!-- end footer -->
-  
+    <script src="./lib/hammerjs/hammer.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

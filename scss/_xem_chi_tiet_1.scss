@@ -1,6 +1,6 @@
 .triple-next-icon {
   top: 50%;
-  left: 15px;
+  left: 66px;
   transform: translateY(-50%);
 }
 .expected {
@@ -21,5 +21,24 @@
     & .des {
       flex: 0;
     }
+  }
+}
+.btn-claw-primary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  &.hide {
+    transform: translateX(calc(-100% + 58px));
+  }
+
+  .claw-primary__icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

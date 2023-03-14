@@ -1289,6 +1289,7 @@ html ::-webkit-scrollbar {
   padding: 7px 26px;
   height: 64px;
   z-index: 999;
+  overflow: hidden;
 }
 .block-footer .item {
   color: var(--gray--77d);
@@ -1367,6 +1368,14 @@ html ::-webkit-scrollbar {
   border-bottom: solid 15px var(--gray--1b);
   border-left: solid 15px transparent;
   border-right: solid 15px transparent;
+}
+.destination-list .map-picker-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  z-index: 10000;
 }
 
 .select-list select {
@@ -1622,7 +1631,7 @@ textarea::placeholder {
 
 .triple-next-icon {
   top: 50%;
-  left: 15px;
+  left: 66px;
   transform: translateY(-50%);
 }
 
@@ -1643,6 +1652,25 @@ textarea::placeholder {
 }
 .expected .expected-item .des {
   flex: 0;
+}
+
+.btn-claw-primary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+.btn-claw-primary.hide {
+  transform: translateX(calc(-100% + 58px));
+}
+.btn-claw-primary .claw-primary__icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .btn-copy {

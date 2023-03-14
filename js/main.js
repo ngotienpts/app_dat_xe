@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // map picker
   var mapPiker = document.querySelector(".map-picker");
 
+  // hummner
+  var clawPrimarys = document.querySelectorAll(".btn-claw-primary");
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -281,6 +284,25 @@ document.addEventListener("DOMContentLoaded", function () {
             mapResult.classList.remove("active");
           }
         };
+      }
+
+      // hummerjs
+      if (clawPrimarys) {
+        clawPrimarys.forEach((clawPrimary) => {
+          var clawIcon = clawPrimary.querySelector(".claw-primary__icon");
+          var mc = new Hammer(clawPrimary);
+          var threshold = 100;
+          mc.on("panleft panright tap press", function (e) {
+            var dragDistance = e.deltaX;
+            if (dragDistance > threshold) {
+              clawPrimary.classList.remove("hide");
+              clawIcon.style.opacity = 0;
+            } else if (dragDistance < -threshold) {
+              clawPrimary.classList.add("hide");
+              clawIcon.style.opacity = 1;
+            }
+          });
+        });
       }
     },
     //

@@ -101,6 +101,7 @@ html ::-webkit-scrollbar {
   padding: 7px 26px;
   height: 64px;
   z-index: 999;
+  overflow: hidden;
 
   & .item {
     &.active {
