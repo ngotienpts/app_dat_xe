@@ -29,6 +29,7 @@ html ::-webkit-scrollbar {
   right: 0;
   left: 0;
   width: 100%;
+  padding: 0;
   z-index: 999;
   background-color: var(--black);
   & .left {
@@ -41,10 +42,19 @@ html ::-webkit-scrollbar {
       right: 3px;
       top: 2px;
     }
+    img {
+      padding: 12px 15px;
+    }
   }
   & .heading {
+    padding: 12px;
     & .logo {
       height: 35px;
+    }
+  }
+  & .right {
+    img {
+      padding: 12px 15px;
     }
   }
 }
@@ -128,7 +138,10 @@ html ::-webkit-scrollbar {
   height: 3rem;
   padding: 0;
 }
-
+.block-footer--audio {
+  height: 4rem;
+  padding: 0;
+}
 .block-footer--third {
   background-color: var(--black);
   // height: 2.5rem;

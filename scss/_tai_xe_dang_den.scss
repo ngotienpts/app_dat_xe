@@ -1,7 +1,7 @@
 .driver-comming-map {
   overflow: hidden;
-  transition: all 0.6s ease-out;
-  max-height: 600px;
+  transition: all 0.5s ease-out;
+  max-height: 400px;
   .driver-comming-img {
     width: 100%;
     height: auto;
@@ -14,7 +14,7 @@
     left: 10px;
   }
   &.hide {
-    max-height: 0;
+    max-height: 60px;
   }
 }
 .driver-comming-drag {

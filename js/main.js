@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var editSetting = document.querySelector(".setting-avatar");
 
   // clipboard
-  var clipboard = document.querySelector(".js--clipboard-filed");
+  var clipboards = document.querySelectorAll(".js--clipboard-filed");
 
   //
   var typeNumberAll = document.querySelectorAll('input[type="number"]');
@@ -234,14 +234,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // clipboard
-      if (clipboard) {
-        var imgCopy = clipboard.querySelector(".js--clipboard-img");
-        var text = clipboard.querySelector(".js--clipboard-text");
-        var tooltip = clipboard.querySelector(".js--tooltip");
-        imgCopy.onclick = function () {
-          tooltip.classList.add("active");
-          navigator.clipboard.writeText(text.innerText);
-        };
+      if (clipboards) {
+        clipboards.forEach((clipboard) => {
+          var imgCopy = clipboard.querySelector(".js--clipboard");
+          var text = clipboard.querySelector(".js--clipboard-text");
+          var tooltip = clipboard.querySelector(".js--tooltip");
+          imgCopy.onclick = function () {
+            tooltip.classList.add("active");
+            navigator.clipboard.writeText(text.innerText);
+          };
+        });
       }
 
       // destinations
@@ -319,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         var box = new Hammer(clawDrag);
         box.get("pan").set({ direction: Hammer.DIRECTION_ALL });
-        box.on("panleft panright panup pandown", function (e) {
+        box.on("panleft panright panup pandown tap press", function (e) {
           switch (e.type) {
             case "panup":
               clawMap.classList.add("hide");
