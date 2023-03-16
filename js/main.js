@@ -308,11 +308,35 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       if (clawSecondary) {
+        var clawDrag = document.querySelector(".driver-comming-drag");
         var clawMap = clawSecondary.querySelector(".driver-comming-map");
-        var clawDrag = clawSecondary.querySelector(".driver-comming-drag");
-        clawDrag.onclick = function () {
-          clawMap.classList.toggle("hide");
-        };
+        // var clawDrag = clawSecondary.querySelector(".driver-comming-drag");
+        // clawDrag.onclick = function () {
+        //   clawMap.classList.toggle("hide");
+        // };
+        if (!clawMap.matches(".hide")) {
+          document.querySelector("body").style.overflow = "hidden";
+        }
+        var box = new Hammer(clawDrag);
+        box.get("pan").set({ direction: Hammer.DIRECTION_ALL });
+        box.on("panleft panright panup pandown", function (e) {
+          switch (e.type) {
+            case "panup":
+              clawMap.classList.add("hide");
+              break;
+            case "pandown":
+              clawMap.classList.remove("hide");
+              break;
+            case "panleft":
+              clawMap.classList.toggle("hide");
+              break;
+            case "panright":
+              clawMap.classList.toggle("hide");
+              break;
+            default:
+              clawMap.classList.toggle("hide");
+          }
+        });
       }
     },
     //
