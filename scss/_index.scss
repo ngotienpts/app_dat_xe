@@ -33,15 +33,6 @@ html ::-webkit-scrollbar {
   z-index: 999;
   background-color: var(--black);
   & .left {
-    & .badge {
-      width: 10px;
-      height: 10px;
-      background-color: var(--red--e84);
-      border-radius: 50%;
-      position: absolute;
-      right: 3px;
-      top: 2px;
-    }
     img {
       padding: 12px 15px;
     }
@@ -57,6 +48,15 @@ html ::-webkit-scrollbar {
       padding: 12px 15px;
     }
   }
+}
+.badge {
+  width: 8px;
+  height: 8px;
+  background-color: var(--red--e84);
+  border-radius: 50%;
+  position: absolute;
+  right: 12px;
+  top: 2px;
 }
 .block-main {
   margin-top: 15px;

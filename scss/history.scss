@@ -51,3 +51,12 @@
     }
   }
 }
+.recharge {
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #e8424a;
+  &.plus {
+    color: #2f9881;
+  }
+}

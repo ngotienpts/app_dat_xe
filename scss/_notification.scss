@@ -10,3 +10,33 @@
     }
   }
 }
+.link-tele-wrapper {
+  background-color: var(--white);
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  .link-tele__img {
+    width: 106px;
+    height: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #30a3e6;
+  }
+  .link-tele__content {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .link-tele {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 0 20px;
+    height: 32px;
+    margin-top: 10px;
+  }
+}
