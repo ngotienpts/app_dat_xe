@@ -67,29 +67,11 @@ document.addEventListener("DOMContentLoaded", function () {
       //
       if (selectDefaults) {
         selectDefaults.forEach((selectDefault) => {
-          // selectDefault.onclick = function () {
-          //   this.classList.toggle("active");
-          // };
-
-          // var options =
-          //   selectDefault.parentElement.querySelectorAll(".js_select .option");
-          // options.forEach((option) => {
-          //   option.onclick = function () {
-          //     document
-          //       .querySelector(".option.active")
-          //       .classList.remove("active");
-          //     this.classList.add("active");
-          //     var h4 = this.querySelector(".title");
-          //     var currentEl = selectDefault.querySelector("li");
-          //     currentEl.innerText = h4.innerText;
-          //     selectDefault.classList.remove("active");
-          //   };
-          // });
-
           var selectHeading = selectDefault.querySelector(".js--rotate-180");
-          selectHeading.onclick = function () {
-            this.classList.toggle("show");
-          };
+          if (selectHeading)
+            selectHeading.onclick = function () {
+              this.classList.toggle("show");
+            };
 
           // hide cac element khi click ra ngoai
           document.addEventListener("click", function (e) {
