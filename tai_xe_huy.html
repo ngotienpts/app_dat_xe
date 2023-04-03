@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon//apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon//apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon//apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon//apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon//apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon//apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon//apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon//apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon//manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- end favicon -->
+  <title>A2b</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+</head>
+<body>
+    <style>
+        .cancel-section + .cancel-section {
+            margin-top: 24px;
+        }
+        .cancel-section input[type=radio] {
+            display: none;
+        }
+        .cancel-label {
+            align-items: baseline;
+        }
+        .cancel-check {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            background-color: transparent;
+            cursor: pointer;
+            transform: translateY(3px);
+           
+        }
+        .cancel-check::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            border-radius: 50%;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.23, 1)
+
+        }
+        .cancel-section input[type=radio]:checked ~ .cancel-label .cancel-check::before{
+            background-color: #fff;
+        }
+    </style>
+    <!-- header -->
+    <div class="block-header text-white fs-27 fw-300">
+        <span class="d-block  px-15 py-20">Xác nhận hủy chuyến</span>
+    </div>
+    <!-- end header -->
+
+    <div class="cancel-group mt-20 px-15">
+        <form action="">
+            <!--  -->
+            <div class="cancel-section d-flex">
+                <input type="radio" id="cancel_1" name="cancel" value="1" class="cancel-input" checked>
+                <label for="cancel_1" class="cancel-label d-flex">
+                    <span class="cancel-check d-block mr-10"></span>
+                    <div class="cancel-content">
+                        <span class="cancel-title fs-16 fw-700 lh-20 d-flex">Do tôi không liên hệ được với khách</span>
+                        <span class="cancel-des text-gray-77d fs-15 d-flex mt-4">Tất cả các hình thức liên lạc đều không được</span>
+                    </div>
+                </label>
+            </div>
+            <!--  -->
+            <div class="cancel-section d-flex">
+                <input type="radio" id="cancel_2" name="cancel" value="2" class="cancel-input">
+                <label for="cancel_2" class="cancel-label d-flex">
+                    <span class="cancel-check d-block mr-10"></span>
+                    <div class="cancel-content">
+                        <span class="cancel-title fs-16 fw-700 lh-20 d-flex">Do xe tôi gặp sự cố bất khả kháng</span>
+                        <span class="cancel-des text-gray-77d fs-15 d-flex mt-4">Xe hỏng, xe không thể di chuyển</span>
+                    </div>
+                </label>
+            </div>
+            <!--  -->
+            <div class="cancel-section d-flex">
+                <input type="radio" id="cancel_3" name="cancel" value="3" class="cancel-input">
+                <label for="cancel_3" class="cancel-label d-flex">
+                    <span class="cancel-check d-block mr-10"></span>
+                    <div class="cancel-content">
+                        <span class="cancel-title fs-16 fw-700 lh-20 d-flex">Lý do cá nhân</span>
+                        <span class="cancel-des text-gray-77d fs-15 d-flex mt-4">Do tôi bận, thay đổi lịch trình, thời gian...</span>
+                    </div>
+                </label>
+            </div>
+            <!--  -->
+        </form>
+    </div>
+
+    <!-- footer -->
+    <section class="block-footer block-footer--secondary px-15 py-12 d-flex align-items-center justify-content-between">
+        <button class="btn bg-gray-161 fs-16 flex-1">Đóng</button>
+        <button class="btn bg-red-84 fs-16 flex-1">Hủy chuyến</button>
+    </section>
+    <!-- end footer -->
+    
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
