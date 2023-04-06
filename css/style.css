@@ -2109,9 +2109,6 @@ textarea::placeholder {
   top: 10px;
   left: 10px;
 }
-.driver-comming-map.hide {
-  max-height: 60px;
-}
 
 .driver-comming-drag {
   text-align: center;

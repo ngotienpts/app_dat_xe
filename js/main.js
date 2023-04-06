@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // hammner
   var clawPrimarys = document.querySelectorAll(".btn-claw-primary");
-  var clawSecondary = document.querySelector(".driver-comming-wrapper");
+  var clawSecondarys = document.querySelectorAll(".driver-comming-wrapper");
 
   const app = {
     // su ly cac su kien
@@ -296,35 +296,50 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
-      if (clawSecondary) {
-        var clawDrag = document.querySelector(".driver-comming-drag");
-        var clawMap = clawSecondary.querySelector(".driver-comming-map");
-        // var clawDrag = clawSecondary.querySelector(".driver-comming-drag");
-        // clawDrag.onclick = function () {
-        //   clawMap.classList.toggle("hide");
-        // };
-        if (!clawMap.matches(".hide")) {
-          document.querySelector("body").style.overflow = "hidden";
-        }
-        var box = new Hammer(clawDrag);
-        box.get("pan").set({ direction: Hammer.DIRECTION_ALL });
-        box.on("panleft panright panup pandown tap press", function (e) {
-          switch (e.type) {
-            case "panup":
-              clawMap.classList.add("hide");
-              break;
-            case "pandown":
-              clawMap.classList.remove("hide");
-              break;
-            case "panleft":
-              clawMap.classList.toggle("hide");
-              break;
-            case "panright":
-              clawMap.classList.toggle("hide");
-              break;
-            default:
-              clawMap.classList.toggle("hide");
+      if (clawSecondarys) {
+        clawSecondarys.forEach((clawSecondary) => {
+          var clawDrag = document.querySelector(".driver-comming-drag");
+          var clawSubPan = document.querySelector(".js--subpan");
+          // var clawMap = clawSecondary.querySelector(".driver-comming-map");
+          // var clawCommingDriver = document.querySelector(
+          //   ".block-driver-comming"
+          // );
+
+          if (!clawSecondary.matches(".hide")) {
+            document.querySelector("body").style.overflow = "hidden";
           }
+          var box = new Hammer(clawDrag);
+          var boxSub = new Hammer(clawSubPan);
+          box.get("pan").set({ direction: Hammer.DIRECTION_ALL });
+          box.on("panleft panright panup pandown tap press", function (e) {
+            switch (e.type) {
+              case "panup":
+                clawSecondary.classList.add("hide");
+                break;
+              case "pandown":
+                clawSecondary.classList.remove("hide");
+                break;
+              case "panleft":
+                clawSecondary.classList.toggle("hide");
+                break;
+              case "panright":
+                clawSecondary.classList.toggle("hide");
+                break;
+              default:
+                clawSecondary.classList.toggle("hide");
+            }
+          });
+          boxSub.get("pan").set({ direction: Hammer.DIRECTION_ALL });
+          boxSub.on("panup pandown", function (e) {
+            switch (e.type) {
+              case "panup":
+                clawSecondary.classList.add("hide");
+                break;
+              case "pandown":
+                clawSecondary.classList.remove("hide");
+                break;
+            }
+          });
         });
       }
     },
