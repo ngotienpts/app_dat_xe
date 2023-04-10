@@ -301,9 +301,6 @@ document.addEventListener("DOMContentLoaded", function () {
           var clawDrag = document.querySelector(".driver-comming-drag");
           var clawSubPan = document.querySelector(".js--subpan");
           // var clawMap = clawSecondary.querySelector(".driver-comming-map");
-          // var clawCommingDriver = document.querySelector(
-          //   ".block-driver-comming"
-          // );
 
           if (!clawSecondary.matches(".hide")) {
             document.querySelector("body").style.overflow = "hidden";

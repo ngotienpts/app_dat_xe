@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon//apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon//apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon//apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon//apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon//apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon//apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon//apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon//apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon//android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon//favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon//favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon//favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon//manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- end favicon -->
+  <title>A2b</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./lib/jquery/jquery.js"></script>
+</head>
+
+<body>
+    <style>
+        .switch {
+  position: relative;
+  cursor: pointer;
+  width: 38px;
+  height: 21px;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #808080;
+  border-radius: 100rem;
+  transition: background-color 0.2s linear;
+}
+
+.switch:after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border-radius: 17px;
+  background-color:#fff;
+  top: 2px;
+    left: 3px;
+  transition: background-color 0.2s linear, transform 0.2s linear;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-input:checked + .switch {
+  background-color:#808080;
+}
+
+.switch-input:checked + .switch:after {
+  transform: translateX(16px);
+  background-color: #2884EF;
+}
+    </style>
+    <!-- header -->
+    <section class="block-header text-white px-15 py-12 d-flex align-items-center justify-content-between">
+      <!-- left -->
+      <div class="left">
+        <a href="#">
+          <div class="">
+            <img src="./images/svg/prev.svg" alt="">
+          </div>
+        </a>
+      </div>
+      <!-- end left -->
+      <!-- center -->
+      <div class="center">
+        <a href="#">
+          <h1 class="heading">
+            <span class="heading__text">Đặt chuyến</span>
+
+          </h1>
+        </a>
+      </div>
+      <!-- end center -->
+      <!-- right -->
+      <div class="right">
+        <a href="#">
+          <div class="user">
+            <img src="./images/svg/user.svg" alt="">
+          </div>
+        </a>
+      </div>
+      <!-- end right -->
+    </section>
+    <!-- end header -->
+
+    <!-- main -->
+    <main class="block-main block-home px-15 custom-scroll-100">
+      <h2 class="title text-white fw-300 fs-27 lh-40">Cung đường của bạn</h2>
+      <ul class="destination-list">
+        <li class="destination-item d-flex">
+          <div class="icon mr-10 flex-0">
+            <img src="./images/svg/current-position-gray.svg" alt="">
+          </div>
+          <div class="content flex-1 position-relative">
+              <h3 class="title fw-700 lh-19 text-gray-77d">Vị trí hiện tại</h3>
+              <p class="des fs-15 text-gray-77d">286 Nguyễn Xiển, Thanh Trì, Hà Nội</p>
+              <div class="map position-absolute">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d59597.42262744548!2d105.78172543715795!3d20.99909335118169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d20.9990168!2d105.81674489999999!4m0!5e0!3m2!1svi!2s!4v1678076107705!5m2!1svi!2s" width='100%' height='300' style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+        </li>
+        
+        <li class="destination-item d-flex">
+          <div class="icon mr-10 flex-0">
+            <img src="./images/svg/location.svg" alt="">
+          </div>
+          <div class="content flex-1 position-relative">
+            <h3 class="title fw-700 lh-19">Cảng hàng không quốc tế Nội Bài</h3>
+            <p class="des fs-15 text-gray-77d">Phú Minh, Sóc Sơn, Hà Nội</p>
+            <div class="map position-absolute">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d59597.42262744548!2d105.78172543715795!3d20.99909335118169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d20.9990168!2d105.81674489999999!4m0!5e0!3m2!1svi!2s!4v1678076107705!5m2!1svi!2s" width='100%' height='300' style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </li>
+
+        <li class="destination-item d-flex">
+            <div class="icon mr-10 flex-0">
+              <img src="./images/svg/zoom.svg" alt="">
+            </div>
+            <div class="content flex-1 position-relative">
+                <h3 class="title fw-700 lh-19">Phạm vi đón trả khách:&nbsp;10km</h3>
+              <div class="w-100 mt-15">
+                  <input type="range" min="1" max="100" value="30" class="input-slider">
+                </div>
+              
+            </div>
+          </li>
+        <li class="destination-item d-flex">
+            <div class="icon mr-10 flex-0">
+              <img src="./images/svg/lightning.svg" alt="">
+            </div>
+            <div class="content flex-1 position-relative">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h3 class="title fw-700 lh-19">Báo giá tự động</h3>
+                    <div class="automatic-quote">
+                        <input type="checkbox" id="switch" class="switch-input" checked/>
+                        <label for="switch" class="switch"></label>
+                    </div>
+                </div>
+              <p class="des fs-15 text-gray-77d">Hệ thống tự động gửi báo giá khi tìm thấy khách</p>
+              
+            </div>
+          </li>
+        <li class="destination-item d-flex">
+            <div class="icon mr-10 flex-0">
+              <img src="./images/svg/dola.svg" alt="">
+            </div>
+            <div class="content flex-1 position-relative">
+              <h3 class="title fw-700 lh-19">Báo giá: 6000 VNĐ/km</h3>
+              <div class="w-100 mt-15">
+                  <input type="range" min="1" max="100" value="30" class="input-slider" >
+                </div>
+              
+            </div>
+          </li>
+      </ul>
+      <div class="line"></div>
+      
+    </main>
+    <!-- end main -->
+
+    <!-- footer -->
+    <section class="block-footer block-footer--secondary px-15 py-12 d-flex align-items-center justify-content-between">
+      <button class="btn bg-gray-161 fs-16 flex-1">Trang chủ</button>
+      <button class="btn bg-red-84 fs-16 flex-1">Tìm khách</button>
+    </section>
+    <!-- end footer -->
+  
+  <script src="./js/main.js"></script>
+ 
+</body>
+
+</html>
